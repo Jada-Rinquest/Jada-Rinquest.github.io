@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">My name is Jada Rinquest and I'm currently a 3rd year IT student, from the Cape Peninsula University of Technology.</p>
+<p align="left">My name is Jada Rinquest and I'm currently a 3rd year IT student, from the Cape Peninsula University of Technology. You can reach me on my LinkedIn account: Jada Rinquest</p>
 
 ###
 
