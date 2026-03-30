@@ -2,7 +2,8 @@
 
 ###
 
-<p align="left">My name is Jada Rinquest and I'm currently a 3rd year IT student, from the Cape Peninsula University of Technology. You can reach me on my LinkedIn account: Jada Rinquest</p>
+<p align="left">My name is Jada Rinquest and I'm currently a 3rd year IT student, from the Cape Peninsula University of Technology.</p>
+<p align="left"> Lets connect: LinkedIn :www.linkedin.com/in/jada-rinquest-152a563aa or you can contact me on my email: 222871296@mycput.ac.za</p>
 
 ###
 
