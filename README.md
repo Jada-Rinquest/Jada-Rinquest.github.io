@@ -1,5 +1,4 @@
-# Jada-Rinquest.github.io
-<h1 align="left">Hey 👋 What's up?</h1>
+<h1 align="left">Hello 👋 Future Software Developer here?</h1>
 
 ###
 
@@ -12,7 +11,7 @@
 ###
 
 <p align="left">
-✨ Creating bugs since 2023 (and fixing them too 😄)<br>
+✨ Creating bugs since 2024 (and fixing them too 😄)<br>
 📚 I'm currently learning Java, databases, and software development practices<br>
 🎯 Goals: To become a skilled software developer and gain real-world industry experience<br>
 💪 I am a strong, motivated individual who enjoys working with others, but I am also comfortable working independently when needed<br>
