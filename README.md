@@ -1,44 +1,95 @@
-<h1 align="left">Hello 👋 Future Software Developer here?</h1>
+# JADA RINQUEST
 
-###
+📞 0604441981  
+📧 222871296@mycput.ac.za  
+📍 Cape Town, South Africa  
 
-<p align="left">My name is Jada Rinquest and I'm currently a 3rd year IT student, from the Cape Peninsula University of Technology.</p>
-<p align="left"> Lets connect: LinkedIn :www.linkedin.com/in/jada-rinquest-152a563aa or you can contact me on my email: 222871296@mycput.ac.za</p>
+---
 
-###
+## PROFESSIONAL OVERVIEW
 
-<h2 align="left">About me</h2>
+Information Technology diploma student with a strong interest in building practical software using Java and JavaScript while continuously learning modern frameworks. Adaptable in different environments, always open to learning new things and committed to delivering high-quality work. Strong communication skills, teamwork ability, and a disciplined work ethic in every project.
 
-###
+---
 
-<p align="left">
-✨ Creating bugs since 2024 (and fixing them too 😄)<br>
-📚 I'm currently learning Java, databases, and software development practices<br>
-🎯 Goals: To become a skilled software developer and gain real-world industry experience<br>
-💪 I am a strong, motivated individual who enjoys working with others, but I am also comfortable working independently when needed<br>
-🤝 I'm dependable and take pride in delivering quality work<br>
-⏱️ I value time management — I like breaking tasks into smaller sprints to stay productive and avoid stress<br>
-🎲 Fun fact: I actually enjoy getting work done early because I hate last-minute pressure!
-</p>
+## WORK EXPERIENCE
 
-<p align="left">
-I am a strong and motivated individual who enjoys working with others and being part of a team. At the same time, I am just as comfortable working independently when needed. I am reliable, and people can depend on me to get the job done. I take pride in managing my time well, because I prefer to stay ahead of my work rather than feel rushed or stressed.
-</p>
+### Sales Assistant  
+**Sterns – Tygervalley & Canal Walk**  
+*Nov 2025 – Jan 2026*  
+*Nov 2024 – Apr 2025*  
+*Jun 2023 – Jan 2024*
 
-###
+- Assisted customers with jewellery selection and enquiries  
+- Operated point-of-sale systems and handled transactions  
+- Maintained merchandising and store standards  
+- Supported shift operations and sales targets  
+- Worked collaboratively within a team environment  
 
-<h2 align="left">I code with</h2>
+---
 
-###
+### Part-Time Bartender  
+**Classic Cats Gin Bar**  
+*Feb 2022 – Apr 2023*
 
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" alt="github logo"  />
-</div>
+- Delivered professional customer service in a fast-paced environment  
+- Managed cash handling and orders  
+- Maintained hygiene and safety standards  
 
-###
+---
+
+### Teacher’s Assistant (Contract)  
+**Roosendal High School**  
+*Apr 2022 – Dec 2022*
+
+- Assisted educators with classroom preparation  
+- Supported learners and administrative duties  
+
+---
+
+## EDUCATION
+
+**Diploma in Information Technology**  
+Cape Peninsula University of Technology  
+*2024 – Present*  
+
+**National Senior Certificate (Grade 12)**  
+Bellville Technical High School  
+*2021*  
+
+---
+
+## TECHNICAL SKILLS
+
+- Coding  
+- Java, SQL  
+- UX/UI Design  
+- Customer Service  
+- Communication Skills  
+- Teamwork  
+- Time Management  
+- Ability to Work Under Pressure  
+
+---
+
+## ACADEMIC PROJECTS
+
+### Student Accommodation Mobile App
+- Developed a mobile application allowing students to apply for accommodation  
+- Focused on usability, data handling, and practical functionality  
+
+### Student Project Registration Database
+- Designed a database system for students to register and deregister for projects  
+- Created tables, relationships, and basic queries to manage data  
+
+---
+
+## REFERENCES
+
+**Warren Meyer**  
+Manager, Sterns TFG  
+📞 073 841 7640  
+
+**Quentin Strydom**  
+Owner, Classic Cats  
+📞 068 254 2254  
