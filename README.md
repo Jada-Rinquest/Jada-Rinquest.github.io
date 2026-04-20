@@ -93,3 +93,48 @@ Manager, Sterns TFG
 **Quentin Strydom**  
 Owner, Classic Cats  
 📞 068 254 2254  
+
+---
+
+## REFLECTION
+### Reflection on Coding in Markdown (STAR Method)
+
+**Situation:**  
+As part of creating my digital portfolio, I had to learn how to use Markdown to structure and present my CV on GitHub.
+
+**Task:**  
+My task was to convert my CV into Markdown format while making sure it remained professional, readable, and well-organised.
+
+**Action:**  
+At first, I found Markdown confusing because I was not used to writing code for formatting. I struggled with things like headings, spacing, and aligning content properly. Instead of giving up, I practiced using different Markdown features such as headings, bullet points, and bold text. I kept testing my work on GitHub to see how it displayed and fixed mistakes until it looked correct.
+
+**Result:**  
+Through this process, I improved my attention to detail and problem-solving skills. I became more comfortable using Markdown and now understand how developers structure content clearly. This experience showed me that even if I struggle at first, practicing consistently helps me improve and achieve a professional result.
+
+### Reflection on Mock Interview Experience (STAR Method)
+
+**Situation:**  
+I participated in a mock interview as part of my work readiness training to prepare for real-world job interviews.
+
+**Task:**  
+I needed to present myself professionally, answer questions confidently, and demonstrate my skills and personality effectively.
+
+**Action:**  
+Initially, I felt nervous and unsure about how to answer certain questions, especially when I had to think on the spot. Some of my answers were not well-structured at first. However, I did not give up. I practiced answering common interview questions and focused on improving how I spoke, including my tone, confidence, and clarity. I also worked on staying calm and thinking before responding.
+
+**Result:**  
+By the end of the process, I became more confident in expressing myself and answering questions clearly. I learned the importance of preparation and communication during interviews. This experience helped me develop confidence, adaptability, and better problem-solving skills, which will be valuable in real interview situations.
+
+### Reflection on Using GitHub Pages (STAR Method)
+
+**Situation:**  
+As part of the portfolio project, I was required to publish my work using GitHub Pages to create an online digital portfolio.
+
+**Task:**  
+My task was to take my GitHub repository and successfully deploy it as a live website that showcases my CV, mock interview, and reflections.
+
+**Action:**  
+At first, I found the process challenging because I had never used GitHub Pages before. I struggled with understanding how to publish the site and make sure everything displayed correctly. I explored the settings, followed the required steps, and kept testing my link. When things did not work, I went back to fix errors and tried again until the site was successfully published.
+
+**Result:**  
+I successfully created and deployed my digital portfolio online. This experience helped me understand how GitHub can be used not just for coding, but also for presenting work professionally. I developed patience, technical skills, and confidence in using new tools, and I now feel more prepared to showcase my work digitally in the future.
