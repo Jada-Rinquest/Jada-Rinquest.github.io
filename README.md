@@ -72,7 +72,7 @@ Bellville Technical High School
 
 ---
 <video width="600" controls>
-  <source src="video/interview.mp4" type="video/mp4">
+  <source src="CV/video/interview.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 ---
