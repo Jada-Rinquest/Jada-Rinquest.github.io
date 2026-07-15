@@ -144,6 +144,371 @@ nav a:hover{
     line-height:1.8;
 }
 
+/* Buttons */
+
+.hero-buttons{
+
+    margin-top:35px;
+}
+
+.btn-primary,
+.btn-secondary{
+
+    display:inline-block;
+
+    padding:14px 28px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    margin:10px;
+
+    transition:.3s;
+}
+
+.btn-primary{
+
+    background:var(--purple);
+
+    color:white;
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 0 25px rgba(139,92,246,.6);
+}
+
+.btn-secondary{
+
+    border:2px solid var(--cyan);
+
+    color:white;
+}
+
+.btn-secondary:hover{
+
+    background:var(--cyan);
+
+    color:black;
+}
+
+/* Sections */
+
+section{
+
+    padding:100px 10%;
+}
+
+/* Headings */
+
+h2{
+
+    text-align:center;
+
+    font-size:2.5rem;
+
+    margin-bottom:50px;
+
+    position:relative;
+}
+
+h2::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:70px;
+
+    height:4px;
+
+    background:var(--purple);
+
+    bottom:-15px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    border-radius:10px;
+}
+
+/* Glass Cards */
+
+.card,
+.project-card{
+
+    background:var(--card);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    transition:.3s ease;
+}
+
+.card:hover,
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 15px 40px rgba(139,92,246,.25);
+}
+
+/* Skills Grid */
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+}
+
+/* Links */
+
+a{
+
+    color:var(--cyan);
+}
+
+/* Footer */
+
+footer{
+
+    text-align:center;
+
+    padding:40px;
+
+    color:var(--secondary);
+}
+
+/* Floating Glow Effects */
+
+.glow{
+
+    position:fixed;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    z-index:-1;
+}
+
+.glow1{
+
+    width:300px;
+
+    height:300px;
+
+    background:#8B5CF6;
+
+    top:10%;
+
+    left:10%;
+}
+
+.glow2{
+
+    width:300px;
+
+    height:300px;
+
+    background:#06B6D4;
+
+    bottom:10%;
+
+    right:10%;
+}
+My recommendation
+
+Combine:
+
+✅ Animated gradient background
+✅ Glassmorphism cards
+✅ Profile photo
+✅ Glow effects
+✅ Hover animations
+✅ Purple/Cyan color scheme
+
+That combination gives a portfolio that feels modern, premium, and appropriate for a CAPACITI WIL candidate without looking overdesigned.
+
+okay combine then
+
+Great choice. Here's a single CSS upgrade that combines:
+
+✅ Animated gradient background
+✅ Glassmorphism cards
+✅ Purple/Cyan glow effects
+✅ Premium buttons
+✅ Better navigation
+✅ Profile picture styling
+✅ Smooth scrolling
+✅ Hover animations
+✅ Modern recruiter-friendly look
+
+Replace your entire css/style.css with this:
+
+:root{
+    --bg:#0F172A;
+    --card:rgba(255,255,255,0.05);
+    --purple:#8B5CF6;
+    --cyan:#06B6D4;
+    --text:#FFFFFF;
+    --secondary:#CBD5E1;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+
+    background:
+    linear-gradient(
+    -45deg,
+    #0F172A,
+    #1E1B4B,
+    #312E81,
+    #0F172A);
+
+    background-size:400% 400%;
+
+    animation:gradientMove 15s ease infinite;
+
+    color:white;
+
+    overflow-x:hidden;
+}
+
+/* Animated Background */
+
+@keyframes gradientMove{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+/* Navigation */
+
+nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    position:sticky;
+    top:0;
+
+    backdrop-filter:blur(20px);
+
+    background:rgba(15,23,42,.75);
+
+    z-index:1000;
+}
+
+.logo{
+
+    font-size:1.5rem;
+    font-weight:700;
+    color:var(--purple);
+}
+
+nav ul{
+
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+
+    color:var(--purple);
+}
+
+/* Hero */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+}
+
+.hero-content{
+
+    max-width:800px;
+}
+
+.hero h1{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:4.5rem;
+
+    margin-bottom:10px;
+}
+
+.hero h2{
+
+    color:var(--purple);
+
+    min-height:40px;
+
+    margin-bottom:20px;
+}
+
+.hero p{
+
+    font-size:1.1rem;
+
+    color:var(--secondary);
+
+    line-height:1.8;
+}
+
 /* Profile Picture */
 
 .profile-pic{
@@ -353,6 +718,59 @@ footer{
 
     right:-100px;
 }
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    nav{
+
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+
+        font-size:3rem;
+    }
+
+    section{
+
+        padding:70px 6%;
+    }
+}
+Then add these two lines immediately after <body>
+<div class="glow glow1"></div>
+<div class="glow glow2"></div>
+And if you have a photo
+
+Place it before your name inside the hero section:
+
+<img src="assets/images/profile.jpg"
+     alt="Jada Rinquest"
+     class="profile-pic">
+Folder structure
+Jada-Rinquest.github.io
+│
+├── index.html
+│
+├── css
+│   └── style.css
+│
+├── js
+│   └── script.js
+│
+└── assets
+    └── images
+        └── profile.jpg
+
+This will give you a polished, modern portfolio with a premium dark theme suitable for showcasing your CAPACITI WIL journey, projects, and skills.
 
 /* Mobile */
 
