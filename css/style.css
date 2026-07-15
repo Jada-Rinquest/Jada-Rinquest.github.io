@@ -169,19 +169,24 @@ nav a:hover{
 
 .btn-primary{
 
-    background:var(--purple);
+    background:#8B5CF6;
 
     color:white;
+
+    padding:14px 30px;
+
+    border-radius:12px;
+
+    transition:0.3s;
 }
 
 .btn-primary:hover{
 
-    transform:translateY(-4px);
+    transform:translateY(-3px);
 
     box-shadow:
-    0 0 25px rgba(139,92,246,.6);
+    0 0 25px rgba(139,92,246,.5);
 }
-
 .btn-secondary{
 
     border:2px solid var(--cyan);
