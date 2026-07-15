@@ -367,6 +367,34 @@ footer{
     bottom:10%;
 
     right:10%;
+
+    .certificate-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:25px;
+
+    margin-top:30px;
+}
+
+.certificate-grid .card{
+
+    text-align:center;
+}
+
+.certificate-grid h3{
+
+    margin-bottom:10px;
+}
+
+.certificate-grid p{
+
+    margin-bottom:20px;
+    color:var(--secondary);
+}
 }
 
 
