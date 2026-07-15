@@ -211,11 +211,14 @@ section{
 /* Headings */
 
 h2{
+
     text-align:center;
+
     font-size:2.5rem;
+
     margin-bottom:50px;
+
     position:relative;
-    width:100%;
 }
 
 h2::after{
@@ -224,18 +227,50 @@ h2::after{
 
     position:absolute;
 
-    width:60%;
+    width:70px;
 
     height:4px;
 
-    background:#8B5CF6;
+    background:var(--purple);
 
-    left:20%;
+    bottom:-15px;
 
-    bottom:-10px;
+    left:50%;
 
-    border-radius:5px;
+    transform:translateX(-50%);
+
+    border-radius:10px;
 }
+
+/* Glass Cards */
+
+.card,
+.project-card{
+
+    background:var(--card);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    transition:.3s ease;
+}
+
+.card:hover,
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 15px 40px rgba(139,92,246,.25);
+}
+
 /* Glass Cards */
 
 .card,
