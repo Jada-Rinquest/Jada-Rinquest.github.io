@@ -207,13 +207,13 @@ section{
 
 h2{
 
-    text-align:center;
-
     font-size:2.5rem;
 
-    margin-bottom:50px;
-
     position:relative;
+
+    display:inline-block;
+
+    margin-bottom:50px;
 }
 
 h2::after{
@@ -222,21 +222,18 @@ h2::after{
 
     position:absolute;
 
-    width:70px;
+    width:60%;
 
     height:4px;
 
-    background:var(--purple);
+    background:#8B5CF6;
 
-    bottom:-15px;
+    left:20%;
 
-    left:50%;
+    bottom:-10px;
 
-    transform:translateX(-50%);
-
-    border-radius:10px;
+    border-radius:5px;
 }
-
 /* Glass Cards */
 
 .card,
