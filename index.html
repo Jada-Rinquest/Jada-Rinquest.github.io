@@ -5,11 +5,424 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jada Rinquest · Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* ============================================================
+                   JADA RINQUEST PORTFOLIO - FULL STYLES
+                   ============================================================ */
+
+        /* ----- RESET & BASE ----- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f0f2f5;
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            padding: 2rem 1rem;
+            color: #0b1f33;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            max-width: 1020px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.15);
+            padding: 2.5rem 2.8rem;
+        }
+
+        /* ----- HEADER ----- */
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.3rem;
+            border-bottom: 2px solid #eef2f6;
+            padding-bottom: 1.2rem;
+        }
+
+        .name-title h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: #0b1f33;
+            margin-bottom: 0.1rem;
+        }
+
+        .name-title .subhead {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #4a637a;
+            letter-spacing: 0.3px;
+        }
+
+        .name-title .subhead i {
+            color: #2563eb;
+            margin-right: 6px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1.2rem;
+            align-items: center;
+        }
+
+        .social-icons a {
+            color: #2c4058;
+            font-size: 1.4rem;
+            transition: color 0.2s, transform 0.15s;
+        }
+
+        .social-icons a:hover {
+            color: #2563eb;
+            transform: scale(1.08);
+        }
+
+        /* ----- CHIPS (personal details) ----- */
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem 2.2rem;
+            background: #f1f5f9;
+            padding: 0.6rem 1.6rem;
+            border-radius: 60px;
+            margin: 0.8rem 0 1.5rem 0;
+            font-weight: 450;
+            color: #1e3449;
+            font-size: 0.95rem;
+        }
+
+        .chips i {
+            color: #2563eb;
+            margin-right: 0.4rem;
+            width: 1.1rem;
+        }
+
+        /* ----- SUMMARY ----- */
+        .summary {
+            background: #f1f5f9;
+            padding: 1rem 1.6rem;
+            border-radius: 24px;
+            margin-bottom: 2rem;
+            font-size: 0.98rem;
+            color: #1e3449;
+            border-left: 4px solid #2563eb;
+            line-height: 1.6;
+        }
+
+        .summary i {
+            color: #2563eb;
+            margin-right: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* ----- TWO COLUMN LAYOUT ----- */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 2.5rem;
+            margin-top: 0.3rem;
+        }
+
+        /* ----- SECTIONS ----- */
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #2c4058;
+            border-bottom: 2px solid #dce3ec;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-title i {
+            color: #2563eb;
+            margin-right: 0.5rem;
+            width: 1.2rem;
+        }
+
+        /* ----- SKILLS ----- */
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background: #e7edf5;
+            padding: 0.2rem 1.2rem;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #0b1f33;
+        }
+
+        .soft-list {
+            list-style: none;
+            margin-top: 0.1rem;
+        }
+
+        .soft-list li {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+            margin-bottom: 0.2rem;
+            font-size: 0.95rem;
+        }
+
+        .soft-list i {
+            color: #2563eb;
+            width: 1.1rem;
+            font-size: 0.7rem;
+        }
+
+        /* ----- INTERESTS ----- */
+        .interest-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .interest-badges span {
+            background: #ecf3fa;
+            padding: 0.1rem 1.2rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+        }
+
+        .interest-badges i {
+            margin-right: 0.4rem;
+            color: #2563eb;
+        }
+
+        /* ----- EDUCATION & WORK ----- */
+        .entry {
+            margin-bottom: 1.2rem;
+        }
+
+        .entry-head {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-weight: 600;
+            color: #0b1f33;
+            font-size: 0.98rem;
+        }
+
+        .entry-head span:last-child {
+            font-weight: 400;
+            color: #4a637a;
+        }
+
+        .entry-sub {
+            font-weight: 400;
+            color: #4a637a;
+            font-size: 0.9rem;
+            margin-top: 0.05rem;
+        }
+
+        .entry-desc {
+            margin-top: 0.2rem;
+            font-size: 0.94rem;
+            color: #1f3a57;
+        }
+
+        .entry-desc ul {
+            list-style: none;
+            padding-left: 0.2rem;
+        }
+
+        .entry-desc ul li {
+            padding-left: 1.2rem;
+            position: relative;
+            margin-bottom: 0.1rem;
+        }
+
+        .entry-desc ul li::before {
+            content: "•";
+            color: #2563eb;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .work-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .work-item .entry-head .date {
+            font-weight: 400;
+            color: #4a637a;
+            font-size: 0.85rem;
+        }
+
+        /* ----- REFERENCES ----- */
+        .ref-item {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .ref-item strong {
+            display: inline-block;
+            min-width: 120px;
+            font-weight: 600;
+        }
+
+        /* ----- PROJECT CARDS ----- */
+        .project-card {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 0.9rem 1.2rem;
+            margin-bottom: 1rem;
+            border: 1px solid #e3eaf2;
+            transition: background 0.15s, border-color 0.15s;
+        }
+
+        .project-card:hover {
+            background: #f1f6fd;
+            border-color: #b8cbe0;
+        }
+
+        .project-card a {
+            text-decoration: none;
+            color: #0b1f33;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+            font-size: 0.98rem;
+        }
+
+        .project-card a i {
+            color: #2563eb;
+        }
+
+        .project-card p {
+            font-size: 0.92rem;
+            color: #2c4058;
+            margin-top: 0.2rem;
+            line-height: 1.5;
+        }
+
+        .repo-badge {
+            font-size: 0.78rem;
+            font-weight: 500;
+            background: #e7edf5;
+            padding: 0.05rem 1rem;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top: 0.3rem;
+            color: #1f3a57;
+        }
+
+        .repo-badge i {
+            margin-right: 0.3rem;
+            color: #2563eb;
+        }
+
+        .portfolio-badge {
+            margin-top: 0.6rem;
+            background: #ecf3fa;
+            padding: 0.15rem 1.2rem;
+            border-radius: 40px;
+            display: inline-block;
+            font-size: 0.85rem;
+            color: #1e3449;
+        }
+
+        .portfolio-badge i {
+            color: #2563eb;
+            margin-right: 0.3rem;
+        }
+
+        /* ----- FOOTER ----- */
+        .footer-note {
+            margin-top: 2rem;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-size: 0.8rem;
+            color: #5a738b;
+        }
+
+        .footer-note i {
+            color: #2563eb;
+            margin-right: 0.2rem;
+        }
+
+        .footer-note span:last-child i:last-child {
+            margin-right: 0;
+        }
+
+        /* ----- RESPONSIVE ----- */
+        @media (max-width: 820px) {
+            .card {
+                padding: 1.8rem;
+            }
+            .two-col {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+            .name-title h1 {
+                font-size: 2.2rem;
+            }
+            .chips {
+                border-radius: 30px;
+                gap: 0.4rem 1.5rem;
+                padding: 0.5rem 1.2rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 1rem;
+                border-radius: 20px;
+            }
+            .chips {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.2rem;
+                border-radius: 18px;
+                padding: 0.7rem 1.2rem;
+            }
+            .ref-item strong {
+                min-width: 80px;
+            }
+            .social-icons {
+                gap: 0.8rem;
+            }
+            .name-title h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
+
     <div class="card">
-        <!-- HEADER -->
+        <!-- ===== HEADER ===== -->
         <div class="header">
             <div class="name-title">
                 <h1>Jada Rinquest</h1>
@@ -24,7 +437,7 @@
             </div>
         </div>
 
-        <!-- PERSONAL DETAILS CHIPS -->
+        <!-- ===== PERSONAL DETAILS CHIPS ===== -->
         <div class="chips">
             <span><i class="fas fa-user"></i> 22 years</span>
             <span><i class="fas fa-map-pin"></i> Belhar, Western Cape</span>
@@ -32,16 +445,18 @@
             <span><i class="fas fa-car"></i> Driver's Licence</span>
         </div>
 
-        <!-- SUMMARY -->
+        <!-- ===== SUMMARY ===== -->
         <div class="summary">
             <i class="fas fa-quote-left"></i>
             Adaptable and motivated with strong communication and interpersonal skills. I work well independently and as part of a team — eager to learn and committed to delivering quality work.
         </div>
 
-        <!-- TWO COLUMN -->
+        <!-- ===== TWO COLUMN ===== -->
         <div class="two-col">
-            <!-- LEFT -->
+
+            <!-- ===== LEFT COLUMN ===== -->
             <div>
+
                 <!-- Technical Skills -->
                 <div class="section">
                     <div class="section-title"><i class="fas fa-code"></i> Technical Skills</div>
@@ -100,10 +515,12 @@
                     <div class="ref-item"><strong>Quentin Strydom</strong> Classic Cats · 068 254 2254</div>
                     <div class="ref-item"><strong>Warren Meyer</strong> Sterns Manager · 073 841 7640</div>
                 </div>
+
             </div>
 
-            <!-- RIGHT -->
+            <!-- ===== RIGHT COLUMN ===== -->
             <div>
+
                 <!-- Work Experience -->
                 <div class="section">
                     <div class="section-title"><i class="fas fa-briefcase"></i> Work Experience</div>
@@ -192,16 +609,44 @@
                         <i class="fas fa-globe"></i> github.io portfolio
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- FOOTER -->
+            </div>
+            <!-- end right column -->
+
+        </div>
+        <!-- end two-col -->
+
+        <!-- ===== FOOTER ===== -->
         <div class="footer-note">
             <span><i class="fas fa-map-marker-alt"></i> Belhar, Western Cape</span>
             <span><i class="fas fa-code"></i> built with <i class="fas fa-heart"></i> for Jada</span>
         </div>
-    </div>
 
-    <script src="script.js"></script>
+    </div>
+    <!-- end card -->
+
+    <script>
+        // ============================================================
+        // JADA RINQUEST PORTFOLIO - JAVASCRIPT
+        // ============================================================
+
+        (function() {
+            console.log('🎯 Jada Rinquest portfolio ready!');
+
+            // Project card click feedback
+            const projectCards = document.querySelectorAll('.project-card');
+            projectCards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    if (!e.target.closest('a')) {
+                        const title = this.querySelector('a')?.textContent?.trim() || 'Project';
+                        console.log(`📁 ${title} — clicked`);
+                    }
+                });
+            });
+
+            console.log('✅ Portfolio loaded successfully');
+        })();
+    </script>
+
 </body>
 </html>
