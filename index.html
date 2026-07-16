@@ -3,238 +3,556 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jada Rinquest | Portfolio</title>
+    <title>Jada Rinquest · Portfolio</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <link rel="stylesheet" href="css/style.css">
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: #f8fafc;
+            color: #0b1a2e;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            padding: 2rem 2.5rem;
+        }
+
+        /* header / name + socials */
+        .profile-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid #eef2f6;
+            padding-bottom: 1.5rem;
+        }
+
+        .name-title h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            color: #0b1a2e;
+            line-height: 1.1;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.2rem;
+            align-items: center;
+        }
+
+        .social-links a {
+            color: #1e3a5f;
+            font-size: 1.6rem;
+            transition: color 0.2s ease, transform 0.15s;
+        }
+
+        .social-links a:hover {
+            color: #2563eb;
+            transform: scale(1.05);
+        }
+
+        .social-links .linkedin-icon {
+            font-size: 1.8rem;
+        }
+
+        /* quick personal details grid */
+        .personal-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem 2.5rem;
+            background: #f1f5f9;
+            padding: 0.9rem 1.5rem;
+            border-radius: 60px;
+            margin-bottom: 2rem;
+            font-weight: 450;
+            color: #1e293b;
+        }
+
+        .personal-details span {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .personal-details i {
+            color: #2563eb;
+            width: 1.2rem;
+            font-size: 1rem;
+        }
+
+        /* two column layout */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 2.2rem;
+            margin-top: 0.8rem;
+        }
+
+        /* sections */
+        .section {
+            margin-bottom: 2.2rem;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            color: #334155;
+            border-bottom: 2px solid #dce3ec;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .section-title i {
+            margin-right: 0.5rem;
+            color: #2563eb;
+        }
+
+        /* list items */
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.25rem;
+        }
+
+        .skill-tag {
+            background: #e7edf5;
+            padding: 0.25rem 1rem;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #0b1a2e;
+        }
+
+        .soft-skill-list {
+            list-style: none;
+            margin-top: 0.2rem;
+        }
+
+        .soft-skill-list li {
+            margin-bottom: 0.25rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.4rem;
+        }
+
+        .soft-skill-list li i {
+            color: #2563eb;
+            width: 1.2rem;
+            font-size: 0.8rem;
+        }
+
+        .interest-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 0.2rem;
+        }
+
+        .interest-items span {
+            background: #ecf3fa;
+            padding: 0.2rem 1.2rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+        }
+
+        /* education & work */
+        .entry {
+            margin-bottom: 1.4rem;
+        }
+
+        .entry-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-weight: 600;
+            color: #0b1a2e;
+        }
+
+        .entry-title {
+            font-weight: 600;
+        }
+
+        .entry-sub {
+            font-weight: 400;
+            color: #475569;
+            font-size: 0.9rem;
+            margin-top: 0.1rem;
+        }
+
+        .entry-desc {
+            margin-top: 0.3rem;
+            font-size: 0.95rem;
+            color: #1e293b;
+        }
+
+        .entry-desc ul {
+            list-style: none;
+            padding-left: 0.2rem;
+        }
+
+        .entry-desc ul li {
+            padding-left: 1.2rem;
+            position: relative;
+            margin-bottom: 0.1rem;
+        }
+
+        .entry-desc ul li::before {
+            content: "•";
+            color: #2563eb;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .work-entry {
+            margin-bottom: 1.3rem;
+        }
+
+        .work-entry .entry-header {
+            font-weight: 600;
+        }
+
+        .work-entry .entry-sub {
+            font-weight: 400;
+            color: #475569;
+            font-size: 0.85rem;
+        }
+
+        .work-entry .date-range {
+            font-weight: 400;
+            color: #475569;
+            font-size: 0.85rem;
+        }
+
+        /* project cards */
+        .project-card {
+            background: #f8fafc;
+            border-radius: 18px;
+            padding: 1rem 1.2rem;
+            margin-bottom: 1rem;
+            border: 1px solid #e9edf3;
+            transition: 0.1s ease;
+        }
+
+        .project-card a {
+            text-decoration: none;
+            color: #0b1a2e;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            flex-wrap: wrap;
+        }
+
+        .project-card a i {
+            color: #2563eb;
+            font-size: 0.9rem;
+        }
+
+        .project-card p {
+            font-size: 0.92rem;
+            color: #334155;
+            margin-top: 0.2rem;
+        }
+
+        .project-card .repo-link {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #1e3a5f;
+            background: #e9edf3;
+            padding: 0.1rem 0.8rem;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top: 0.3rem;
+        }
+
+        .project-card .repo-link i {
+            margin-right: 0.3rem;
+        }
+
+        .ref-item {
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .ref-item strong {
+            display: inline-block;
+            min-width: 130px;
+        }
+
+        /* responsive */
+        @media (max-width: 750px) {
+            .container {
+                padding: 1.5rem;
+            }
+            .grid-2 {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+            .profile-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.7rem;
+            }
+            .personal-details {
+                border-radius: 30px;
+                gap: 0.5rem 1.2rem;
+                padding: 0.7rem 1.2rem;
+                font-size: 0.9rem;
+            }
+            .name-title h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .container {
+                padding: 1rem;
+            }
+            .personal-details {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.2rem;
+                border-radius: 20px;
+            }
+        }
+
+        /* minor */
+        .text-muted {
+            color: #475569;
+        }
+
+        .mt-1 {
+            margin-top: 0.5rem;
+        }
+
+        .profile-summary {
+            background: #f1f5f9;
+            padding: 1rem 1.5rem;
+            border-radius: 24px;
+            font-size: 0.95rem;
+            color: #1e293b;
+            margin-bottom: 1.8rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #dce3ec;
+            margin: 0.5rem 0 1.5rem 0;
+        }
+    </style>
 </head>
 <body>
-    
-<nav>
-    <div class="glow glow1"></div>
-    <div class="glow glow2"></div>
-    
-    <div class="logo">JR</div>
-
-    <ul>
-        <li><a href="#about">About</a></li>
-       <li><a href="#skills">Skills</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-<section class="hero">
-    <div class="hero-content">
-        <h1>Jada Rinquest</h1>
-        <h2 id="typing">Aspiring IT Professional</h2>
-
-        <p>
-            Aspiring Information Technology professional with a passion for
-            software development, AI, problem-solving and continuous learning.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#projects" class="btn-primary">View Projects</a>
-            <a href="assets/JadaRinquestCV.pdf"
-   class="btn-secondary"
-   download>
-   Download CV
-</a>
+<div class="container">
+    <!-- header: name + socials -->
+    <div class="profile-header">
+        <div class="name-title">
+            <h1>Jada Rinquest</h1>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/Jada-Rinquest" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jada-rinquest-152a563aa/" target="_blank" aria-label="LinkedIn" class="linkedin-icon"><i class="fab fa-linkedin-in"></i></a>
+            <!-- optional mail icon (non clickable just for style) -->
+            <a href="mailto:jada.rinquest@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
     </div>
-</section>
 
-<section id="about">
-    <h2>About Me</h2>
-
-    <div class="card">
-        <p>
-            I am an adaptable and motivated individual with strong communication and interpersonal skills. I work well both independably and as part of a team, and I enjoy collaborating with others to achieve shared goals. 
-            I am eager to learn, quick to adapt to new environments, and committed to delivering quality work while continuously developing skills. 
-        </p>
-
-        <p>
-            I enjoy learning new technologies, solving practical problems and collaborating with others to create meaningful solutions.
-        </p>
-    </div>
-</section>
-
-<section id="skills">
-    <h2>Skills</h2>
-
-    <div class="skills-grid">
-
-        <div class="card">
-            <h3>Programming</h3>
-            <p>Java</p>
-            <p>JavaScript</p>
-        </div>
-
-        <div class="card">
-            <h3>Database</h3>
-            <p>MySQL</p>
-        </div>
-
-        <div class="card">
-            <h3>Tools</h3>
-            <p>Microsoft Office</p>
-            <p>NetBeans</p>
-            <p>IntelliJ IDEA</p>
-            <p>Git & GitHub</p>
-        </div>
-
-        <div class="card">
-            <h3>Professional Skills</h3>
-            <p>Communication</p>
-            <p>Teamwork</p>
-            <p>Problem Solving</p>
-            <p>Time Management</p>
-        </div>
-
-    </div>
-</section>
-
-<section id="projects">
-    <section id="certificates">
-
-    <h2>Certifications & Continuous Learning</h2>
-
-    <div class="card">
-        <p>
-            I actively pursue continuous learning in Artificial Intelligence,
-            Prompt Engineering and emerging technologies to strengthen my
-            technical skills and stay current with industry trends.
-        </p>
+    <!-- personal details row -->
+    <div class="personal-details">
+        <span><i class="fas fa-user"></i> 22 years</span>
+        <span><i class="fas fa-map-pin"></i> Belhar, Western Cape</span>
+        <span><i class="fas fa-language"></i> English, Afrikaans</span>
+        <span><i class="fas fa-car"></i> Driver’s Licence</span>
     </div>
 
-    <div class="certificate-grid">
-
-        <div class="card">
-            <h3>Google AI Essentials Professional Certificate</h3>
-            <p>Google</p>
-
-            <a href="assets/Jada Rinquest_GoogleAIEssentials_ProfessionalCertificate.pdf"
-               target="_blank"
-               class="btn-primary">
-               View Certificate
-            </a>
-        </div>
-
-        <div class="card">
-            <h3>Introduction to AI</h3>
-            <p>Google AI Essentials</p>
-
-            <a href="assets/Jada Rinquest_GoogleAIEssentials_IntroductiontoAI (1).pdf"
-               target="_blank"
-               class="btn-primary">
-               View Certificate
-            </a>
-        </div>
-
-        <div class="card">
-            <h3>Discover the Art of Prompting</h3>
-            <p>Google AI Essentials</p>
-
-            <a href="assets/Jada Rinquest_GoogleAIEssentials_DiscoverTheArtOfPrompting.pdf"
-               target="_blank"
-               class="btn-primary">
-               View Certificate
-            </a>
-        </div>
-
-        <div class="card">
-            <h3>Maximize Productivity with AI Tools</h3>
-            <p>Google AI Essentials</p>
-
-            <a href="assets/Jada Rinquest_GoogleAIEssentials_MaximizeProductivityWithAITools.pdf"
-               target="_blank"
-               class="btn-primary">
-               View Certificate
-            </a>
-        </div>
-
-        <div class="card">
-            <h3>Stay Ahead of the AI Curve</h3>
-            <p>Google AI Essentials</p>
-
-            <a href="assets/Jada Rinquest_GoogleAIEssentials_StayAheadOfTheAICurve.pdf"
-               target="_blank"
-               class="btn-primary">
-               View Certificate
-            </a>
-        </div>
-
-        <div class="card">
-            <h3>Use AI Responsibly</h3>
-            <p>Google AI Essentials</p>
-
-            <a href="assets/Jada Rinquest_GoogleAIEssentials_UseAIResponsibily.pdf"
-               target="_blank"
-               class="btn-primary">
-               View Certificate
-            </a>
-        </div>
-
+    <!-- summary / about -->
+    <div class="profile-summary">
+        <i class="fas fa-quote-left" style="color: #2563eb; margin-right: 0.4rem;"></i>
+        Adaptable and motivated individual with strong communication and interpersonal skills. 
+        I work well independently and as part of a team, eager to learn and committed to delivering quality work.
     </div>
 
-</section>
-    <h2>Featured Project</h2>
+    <!-- main 2-col grid -->
+    <div class="grid-2">
+        <!-- LEFT COLUMN -->
+        <div>
+            <!-- Technical proficiencies -->
+            <div class="section">
+                <div class="section-title"><i class="fas fa-code"></i> Technical Proficiencies</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">Microsoft Office</span>
+                    <span class="skill-tag">NetBeans IDE</span>
+                    <span class="skill-tag">IntelliJ</span>
+                </div>
+            </div>
 
-    <div class="project-card">
-        <h3>Student Accommodation Mobile App</h3>
+            <!-- Soft Skills -->
+            <div class="section">
+                <div class="section-title"><i class="fas fa-users"></i> Soft Skills</div>
+                <ul class="soft-skill-list">
+                    <li><i class="fas fa-check-circle"></i> Problem solving & Teamwork</li>
+                    <li><i class="fas fa-check-circle"></i> Communication</li>
+                    <li><i class="fas fa-check-circle"></i> Customer Service</li>
+                    <li><i class="fas fa-check-circle"></i> Time Management &amp; work under pressure</li>
+                </ul>
+            </div>
 
-        <p>
-            Student Accommodation Mobile App
-            Developed a mobile application allowing students to apply for accommodation, focused on usability, data handling, and practical functionality. 
-            My role in this group submission was overseeing the designing and coding the wireframes.
+            <!-- Interests -->
+            <div class="section">
+                <div class="section-title"><i class="fas fa-heart"></i> Interests</div>
+                <div class="interest-items">
+                    <span><i class="fas fa-paw" style="margin-right: 0.3rem;"></i>Walks with dogs</span>
+                    <span><i class="fas fa-birthday-cake"></i> Baking</span>
+                </div>
+            </div>
 
-        </p>
+            <!-- Education -->
+            <div class="section">
+                <div class="section-title"><i class="fas fa-graduation-cap"></i> Education</div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <span class="entry-title">Diploma in IT</span>
+                        <span class="text-muted">2024 – present</span>
+                    </div>
+                    <div class="entry-sub">Cape Peninsula University of Technology</div>
+                </div>
+                <div class="entry">
+                    <div class="entry-header">
+                        <span class="entry-title">National Senior Certificate</span>
+                        <span class="text-muted">2021</span>
+                    </div>
+                    <div class="entry-sub">Bellville Technical High School</div>
+                </div>
+            </div>
 
-        <p>
-            Responsible for wireframe design and implementation.
-        </p>
+            <!-- References -->
+            <div class="section">
+                <div class="section-title"><i class="fas fa-address-card"></i> References</div>
+                <div class="ref-item"><strong>Quentin Strydom</strong> (Classic Cats) <br> <span style="font-size:0.9rem;">068 254 2254</span></div>
+                <div class="ref-item"><strong>Warren Meyer</strong> (Sterns Manager) <br> <span style="font-size:0.9rem;">073 841 7640</span></div>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div>
+            <!-- Work Experience -->
+            <div class="section">
+                <div class="section-title"><i class="fas fa-briefcase"></i> Work Experience</div>
+
+                <div class="work-entry">
+                    <div class="entry-header">
+                        <span class="entry-title">Sales Assistant – Sterns</span>
+                        <span class="date-range">Nov 2025 – Jan 2026</span>
+                    </div>
+                    <div class="entry-sub">Tygervalley &amp; Canal Walk</div>
+                    <div class="entry-desc">
+                        <ul>
+                            <li>Customer assistance with jewellery selection</li>
+                            <li>POS systems &amp; transactions</li>
+                            <li>Merchandising &amp; store standards</li>
+                            <li>Shift operations &amp; sales targets</li>
+                            <li>Team collaboration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work-entry">
+                    <div class="entry-header">
+                        <span class="entry-title">Sales Assistant – Sterns</span>
+                        <span class="date-range">Nov 2024 – Apr 2025</span>
+                    </div>
+                    <div class="entry-sub">(additional contract)</div>
+                </div>
+
+                <div class="work-entry">
+                    <div class="entry-header">
+                        <span class="entry-title">Sales Assistant – Sterns</span>
+                        <span class="date-range">Jun 2023 – Jan 2024</span>
+                    </div>
+                </div>
+
+                <div class="work-entry">
+                    <div class="entry-header">
+                        <span class="entry-title">Part-Time Bartender</span>
+                        <span class="date-range">Feb 2022 – Apr 2023</span>
+                    </div>
+                    <div class="entry-sub">Classic Cats Gin Bar</div>
+                    <div class="entry-desc">
+                        <ul><li>Professional customer service in fast-paced environment</li></ul>
+                    </div>
+                </div>
+
+                <div class="work-entry">
+                    <div class="entry-header">
+                        <span class="entry-title">Teacher's Assistant (Contract)</span>
+                        <span class="date-range">Apr 2022 – Dec 2022</span>
+                    </div>
+                    <div class="entry-sub">Roosendal High School</div>
+                    <div class="entry-desc">
+                        <ul><li>Supported learners &amp; administrative duties</li></ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements & Key Projects -->
+            <div class="section">
+                <div class="section-title"><i class="fas fa-star"></i> Achievements &amp; Projects</div>
+
+                <!-- Student Accommodation App -->
+                <div class="project-card">
+                    <a href="#" target="_blank"><i class="fas fa-mobile-alt"></i> Student Accommodation App</a>
+                    <p>Mobile application for student accommodation applications. Focus on usability, data handling, and practical functionality. Role: wireframing &amp; design oversight.</p>
+                </div>
+
+                <!-- Campus Facility Booking (GitHub) -->
+                <div class="project-card">
+                    <a href="https://github.com/Jada-Rinquest/CampusFacilityBooking.git" target="_blank"><i class="fab fa-github"></i> Campus Facility Booking</a>
+                    <p>Repository for campus facility booking system.</p>
+                    <span class="repo-link"><i class="fab fa-github"></i> Jada-Rinquest/CampusFacilityBooking</span>
+                </div>
+
+                <!-- StaggeredSubs T2 INV -->
+                <div class="project-card">
+                    <a href="https://github.com/Jada-Rinquest/StaggeredSubs_T2_INV_222871296.git" target="_blank"><i class="fab fa-github"></i> StaggeredSubs T2 INV</a>
+                    <p>Project repo: StaggeredSubs_T2_INV_222871296</p>
+                    <span class="repo-link"><i class="fab fa-github"></i> Jada-Rinquest/StaggeredSubs_T2_INV_222871296</span>
+                </div>
+
+                <!-- Additional note: link to github.io (this page) -->
+                <div style="margin-top:0.8rem; font-size:0.9rem; background: #ecf3fa; padding: 0.3rem 1rem; border-radius: 40px; display: inline-block;">
+                    <i class="fas fa-globe"></i> github.io portfolio
+                </div>
+            </div>
+        </div>
     </div>
-</section>
 
-<section id="education">
-    <h2>Education</h2>
-
-    <div class="card">
-        <h3>Diploma in Information Technology</h3>
-        <p>Cape Peninsula University of Technology</p>
-        <p>2024 - Present</p>
+    <!-- footer: tiny extra (optional) -->
+    <div style="margin-top: 1.8rem; border-top: 1px solid #e2e8f0; padding-top: 1rem; display: flex; justify-content: space-between; flex-wrap: wrap; font-size: 0.8rem; color: #64748b;">
+        <span><i class="fas fa-map-marker-alt"></i> Belhar, Western Cape</span>
+        <span><i class="fas fa-code"></i> built with <i class="fas fa-heart" style="color: #2563eb;"></i> for Jada Rinquest</span>
     </div>
-
-    <div class="card">
-        <h3>National Senior Certificate</h3>
-        <p>Bellville Technical High School</p>
-        <p>2021</p>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-
-    <div class="card">
-        <p>rinquestjada@gmail.com</p>
-
-        <p>
-            GitHub:
-            <a href="https://github.com/Jada-Rinquest" target="_blank">
-                github.com/Jada-Rinquest
-            </a>
-        </p>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 Jada Rinquest</p>
-</footer>
-
-<script src="js/script.js"></script>
-
+</div>
 </body>
 </html>
