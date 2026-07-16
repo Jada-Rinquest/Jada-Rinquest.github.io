@@ -1,199 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jada Rinquest | Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jada Rinquest · Portfolio</title>
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- separate CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<div class="card" id="app">
+  <!-- HEADER -->
+  <div class="header">
+    <div class="name-title">
+      <h1>Jada Rinquest</h1>
+      <div class="subhead"><i class="fas fa-code" style="color:#2563eb; margin-right:6px;"></i>Aspiring software developer · IT student</div>
+    </div>
+    <div class="social-icons">
+      <a href="https://github.com/Jada-Rinquest" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jada-rinquest-152a563aa/" target="_blank" aria-label="LinkedIn" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:jada.rinquest@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
 
-<div class="container">
+  <!-- personal chips -->
+  <div class="chips">
+    <span><i class="fas fa-user"></i> 22 years</span>
+    <span><i class="fas fa-map-pin"></i> Belhar, Western Cape</span>
+    <span><i class="fas fa-language"></i> English · Afrikaans</span>
+    <span><i class="fas fa-car"></i> Driver's Licence</span>
+  </div>
 
-    <!-- HEADER -->
-    <section class="hero">
+  <!-- summary -->
+  <div class="summary">
+    <i class="fas fa-quote-left"></i> Adaptable and motivated with strong communication and interpersonal skills. I work well independently and as part of a team — eager to learn and committed to delivering quality work.
+  </div>
 
-        <div class="hero-left">
-            <span class="hello">👋 HELLO, I'M</span>
-
-            <h1>Jada Rinquest</h1>
-
-            <p class="subtitle">
-                Aspiring Software Developer · IT Student
-            </p>
-
-            <div class="badges">
-                <span>🎂 22 years</span>
-                <span>📍 Belhar, Western Cape</span>
-                <span>🔤 English · Afrikaans</span>
-                <span>🚗 Driver's Licence</span>
-            </div>
+  <!-- TWO COLUMN -->
+  <div class="two-col">
+    <!-- LEFT -->
+    <div>
+      <!-- Technical Skills -->
+      <div class="section">
+        <div class="section-title"><i class="fas fa-code"></i> Technical Skills</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">Microsoft Office</span>
+          <span class="skill-tag">NetBeans</span>
+          <span class="skill-tag">IntelliJ</span>
         </div>
+      </div>
 
-        <div class="socials">
-            <button id="emailBtn">
-                <i class="fa-solid fa-envelope"></i>
-            </button>
+      <!-- Soft Skills -->
+      <div class="section">
+        <div class="section-title"><i class="fas fa-users"></i> Soft Skills</div>
+        <ul class="soft-list">
+          <li><i class="fas fa-check-circle"></i> Problem solving &amp; teamwork</li>
+          <li><i class="fas fa-check-circle"></i> Communication</li>
+          <li><i class="fas fa-check-circle"></i> Customer service</li>
+          <li><i class="fas fa-check-circle"></i> Time management &amp; working under pressure</li>
+        </ul>
+      </div>
 
-            <button id="linkedinBtn">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </button>
-
-            <button id="githubBtn">
-                <i class="fa-brands fa-github"></i>
-            </button>
+      <!-- Interests -->
+      <div class="section">
+        <div class="section-title"><i class="fas fa-heart"></i> Interests</div>
+        <div class="interest-badges">
+          <span><i class="fas fa-paw"></i> Walks with dogs</span>
+          <span><i class="fas fa-birthday-cake"></i> Baking</span>
         </div>
+      </div>
 
-    </section>
-
-    <!-- ABOUT -->
-    <section class="card">
-        <p>
-            Adaptable and motivated with strong communication and
-            interpersonal skills. I work well independently and as
-            part of a team — eager to learn and committed to
-            delivering quality work.
-        </p>
-    </section>
-
-    <div class="grid">
-
-        <!-- LEFT COLUMN -->
-        <div>
-
-            <section class="card">
-                <h2>Technical Skills</h2>
-
-                <div class="tags">
-                    <span>Java</span>
-                    <span>JavaScript</span>
-                    <span>MySQL</span>
-                    <span>Microsoft Office</span>
-                    <span>NetBeans</span>
-                    <span>IntelliJ</span>
-                </div>
-            </section>
-
-            <section class="card">
-                <h2>Soft Skills</h2>
-
-                <ul>
-                    <li>Problem Solving & Teamwork</li>
-                    <li>Communication</li>
-                    <li>Customer Service</li>
-                    <li>Time Management</li>
-                </ul>
-            </section>
-
-            <section class="card">
-                <h2>Interests</h2>
-
-                <div class="tags">
-                    <span>Walks with Dogs</span>
-                    <span>Baking</span>
-                </div>
-            </section>
-
-            <section class="card">
-                <h2>Education</h2>
-
-                <div class="edu-box">
-                    <h3>Diploma in IT</h3>
-                    <p>Cape Peninsula University of Technology</p>
-                </div>
-
-                <div class="edu-box">
-                    <h3>National Senior Certificate</h3>
-                    <p>Bellville Technical High School</p>
-                </div>
-            </section>
-
-            <section class="card">
-                <h2>References</h2>
-
-                <div class="reference">
-                    <strong>Quentin Strydom</strong>
-                    <p>Classic Cats • 068 254 2254</p>
-                </div>
-
-                <div class="reference">
-                    <strong>Warren Meyer</strong>
-                    <p>Sterns Manager • 073 841 7640</p>
-                </div>
-            </section>
-
+      <!-- Education -->
+      <div class="section">
+        <div class="section-title"><i class="fas fa-graduation-cap"></i> Education</div>
+        <div class="entry">
+          <div class="entry-head">
+            <span>Diploma in IT</span>
+            <span style="font-weight:400; color:#435b72;">2024 – present</span>
+          </div>
+          <div class="entry-sub">Cape Peninsula University of Technology</div>
         </div>
-
-        <!-- RIGHT COLUMN -->
-        <div>
-
-            <section class="card">
-                <h2>Work Experience</h2>
-
-                <div class="job">
-                    <h3>Sales Assistant – Sterns</h3>
-                    <p>Customer service, POS systems, merchandising and teamwork.</p>
-                </div>
-
-                <div class="job">
-                    <h3>Part-Time Bartender</h3>
-                    <p>Professional customer service in a fast-paced environment.</p>
-                </div>
-
-                <div class="job">
-                    <h3>Teacher's Assistant</h3>
-                    <p>Supported learners and administrative duties.</p>
-                </div>
-            </section>
-
-            <section class="card">
-                <h2>Projects & Achievements</h2>
-
-                <div class="project">
-                    <h3>Student Accommodation App</h3>
-                    <p>
-                        Mobile app for student accommodation applications.
-                    </p>
-
-                    <button class="project-btn"
-                    onclick="openProject('https://github.com/')">
-                        View Project
-                    </button>
-                </div>
-
-                <div class="project">
-                    <h3>Campus Facility Booking</h3>
-                    <p>Campus booking system repository.</p>
-
-                    <button class="project-btn"
-                    onclick="openProject('https://github.com/')">
-                        View Project
-                    </button>
-                </div>
-
-                <div class="project">
-                    <h3>Portfolio Website</h3>
-
-                    <button class="project-btn"
-                    onclick="openProject('https://github.com/')">
-                        View Project
-                    </button>
-                </div>
-
-            </section>
-
+        <div class="entry">
+          <div class="entry-head">
+            <span>National Senior Certificate</span>
+            <span style="font-weight:400; color:#435b72;">2021</span>
+          </div>
+          <div class="entry-sub">Bellville Technical High School</div>
         </div>
+      </div>
 
+      <!-- References -->
+      <div class="section">
+        <div class="section-title"><i class="fas fa-address-card"></i> References</div>
+        <div class="ref-item"><strong>Quentin Strydom</strong> Classic Cats · 068 254 2254</div>
+        <div class="ref-item"><strong>Warren Meyer</strong> Sterns Manager · 073 841 7640</div>
+      </div>
     </div>
 
+    <!-- RIGHT -->
+    <div>
+      <!-- Work Experience -->
+      <div class="section">
+        <div class="section-title"><i class="fas fa-briefcase"></i> Work Experience</div>
+
+        <div class="work-item">
+          <div class="entry-head">
+            <span><strong>Sales Assistant — Sterns</strong></span>
+            <span class="date">Nov 2025 – Jan 2026</span>
+          </div>
+          <div class="entry-sub">Tygervalley &amp; Canal Walk</div>
+          <div class="entry-desc">
+            <ul>
+              <li>Customer assistance with jewellery selection</li>
+              <li>POS systems &amp; transactions</li>
+              <li>Merchandising &amp; store standards</li>
+              <li>Shift operations &amp; sales targets</li>
+              <li>Team collaboration</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <div class="entry-head">
+            <span><strong>Sales Assistant — Sterns</strong></span>
+            <span class="date">Nov 2024 – Apr 2025</span>
+          </div>
+          <div class="entry-sub">Additional contract</div>
+        </div>
+
+        <div class="work-item">
+          <div class="entry-head">
+            <span><strong>Sales Assistant — Sterns</strong></span>
+            <span class="date">Jun 2023 – Jan 2024</span>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <div class="entry-head">
+            <span><strong>Part-Time Bartender</strong></span>
+            <span class="date">Feb 2022 – Apr 2023</span>
+          </div>
+          <div class="entry-sub">Classic Cats Gin Bar</div>
+          <div class="entry-desc">
+            <ul><li>Professional customer service in a fast-paced environment</li></ul>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <div class="entry-head">
+            <span><strong>Teacher's Assistant (Contract)</strong></span>
+            <span class="date">Apr 2022 – Dec 2022</span>
+          </div>
+          <div class="entry-sub">Roosendal High School</div>
+          <div class="entry-desc">
+            <ul><li>Supported learners &amp; administrative duties</li></ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects & Achievements -->
+      <div class="section">
+        <div class="section-title"><i class="fas fa-star"></i> Projects &amp; Achievements</div>
+
+        <div class="project-card">
+          <a href="#"><i class="fas fa-mobile-alt"></i> Student Accommodation App</a>
+          <p>Mobile app for student accommodation applications — focus on usability, data handling &amp; practical functionality. Role: wireframing &amp; design oversight.</p>
+        </div>
+
+        <div class="project-card">
+          <a href="https://github.com/Jada-Rinquest/CampusFacilityBooking.git" target="_blank"><i class="fab fa-github"></i> Campus Facility Booking</a>
+          <p>Repository for a campus facility booking system.</p>
+          <span class="repo-badge"><i class="fab fa-github"></i> Jada-Rinquest/CampusFacilityBooking</span>
+        </div>
+
+        <div class="project-card">
+          <a href="https://github.com/Jada-Rinquest/StaggeredSubs_T2_INV_222871296.git" target="_blank"><i class="fab fa-github"></i> StaggeredSubs T2 INV</a>
+          <p>Project repo: StaggeredSubs_T2_INV_222871296</p>
+          <span class="repo-badge"><i class="fab fa-github"></i> Jada-Rinquest/StaggeredSubs_T2_INV_222871296</span>
+        </div>
+
+        <div style="margin-top:0.6rem; background:#ecf3fa; padding:0.2rem 1.2rem; border-radius:40px; display:inline-block; font-size:0.85rem;">
+          <i class="fas fa-globe" style="color:#2563eb;"></i> github.io portfolio
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer-note">
+    <span><i class="fas fa-map-marker-alt" style="color:#2563eb;"></i> Belhar, Western Cape</span>
+    <span><i class="fas fa-code"></i> built with <i class="fas fa-heart" style="color:#2563eb;"></i> for Jada</span>
+  </div>
 </div>
 
+<!-- separate JavaScript -->
 <script src="script.js"></script>
-
 </body>
 </html>
