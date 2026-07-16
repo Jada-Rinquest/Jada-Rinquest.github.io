@@ -1,20 +1,26 @@
-// script.js – simple interactivity for Jada's portfolio
+// script.js – Jada Rinquest Portfolio
 
 (function() {
-  console.log('Jada Rinquest portfolio ready.');
+    console.log('🎯 Jada Rinquest portfolio ready!');
 
-  // Optional: add a subtle animation or interactive behavior
-  const projectCards = document.querySelectorAll('.project-card');
-  projectCards.forEach(card => {
-    card.addEventListener('click', function(e) {
-      // if the click is not on a link, do nothing special
-      // but we could add a tiny feedback
-      if (!e.target.closest('a')) {
-        // just a playful console message
-        console.log('Project card clicked:', this.querySelector('a')?.textContent?.trim() || '');
-      }
+    // Project card click feedback
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            if (!e.target.closest('a')) {
+                const title = this.querySelector('a')?.textContent?.trim() || 'Project';
+                console.log(`📁 ${title} — clicked`);
+            }
+        });
     });
-  });
 
-  // You can add more behaviors later (e.g., dark mode toggle, etc.)
+    // Optional: smooth hover effect enhancement
+    const socialLinks = document.querySelectorAll('.social-icons a');
+    socialLinks.forEach(link => {
+        link.addEventListener('mouseenter', function() {
+            // small extra feedback
+        });
+    });
+
+    console.log('✅ Portfolio loaded successfully');
 })();
