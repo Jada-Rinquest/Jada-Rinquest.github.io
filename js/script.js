@@ -1,52 +1,34 @@
-const typingElement = document.getElementById("typing");
+// Gentle fade-in as cards enter the viewport 🌸
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card");
+  cards.forEach((card) => {
+    card.style.opacity = "0";
+    card.style.transform = "translateY(12px)";
+    card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+  });
 
-if (typingElement) {
-
-    const roles = [
-        "Aspiring Software Developer",
-        "IT Student",
-        "Future AI Professional",
-        "Problem Solver"
-    ];
-
-    let roleIndex = 0;
-    let charIndex = 0;
-
-    function type() {
-
-        if (charIndex < roles[roleIndex].length) {
-
-            typingElement.textContent += roles[roleIndex].charAt(charIndex);
-            charIndex++;
-
-            setTimeout(type, 100);
-
-        } else {
-
-            setTimeout(erase, 1500);
-
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = "1";
+          entry.target.style.transform = "translateY(0)";
+          io.unobserve(entry.target);
         }
-    }
+      });
+    },
+    { threshold: 0.1 }
+  );
 
-    function erase() {
+  cards.forEach((card) => io.observe(card));
 
-        if (typingElement.textContent.length > 0) {
-
-            typingElement.textContent =
-                typingElement.textContent.slice(0, -1);
-
-            setTimeout(erase, 50);
-
-        } else {
-
-            roleIndex = (roleIndex + 1) % roles.length;
-            charIndex = 0;
-
-            setTimeout(type, 300);
-
-        }
-    }
-
-    typingElement.textContent = "";
-    type();
-}
+  // Sparkle hover on social icons
+  document.querySelectorAll(".social").forEach((el) => {
+    el.addEventListener("mouseenter", () => {
+      el.style.transform = "translateY(-3px) rotate(-4deg)";
+    });
+    el.addEventListener("mouseleave", () => {
+      el.style.transform = "";
+    });
+  });
+});
