@@ -1,7 +1,5 @@
 # JADA RINQUEST
 
-📞 0604441981  
-📧 222871296@mycput.ac.za  
 📍 Cape Town, South Africa  
 
 ---
