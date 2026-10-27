@@ -141,3 +141,85 @@ At first, I found the process challenging because I had never used GitHub Pages 
 
 **Result:**  
 I successfully created and deployed my digital portfolio online. This experience helped me understand how GitHub can be used not just for coding, but also for presenting work professionally. I developed patience, technical skills, and confidence in using new tools, and I now feel more prepared to showcase my work digitally in the future.
+
+# Jada Rinquest | Professional Portfolio 2026
+
+Welcome to my professional portfolio. This repository documents my learning journey, projects, practical experience and professional development during my industry placement.
+
+My portfolio showcases my software development and AI project experience at CAPACITI, followed by my transition into a Technical Support role at Linktank.
+
+## About Me
+
+I am a developing IT professional with experience in AI application projects, software testing, problem-solving and technical support. During my placement at CAPACITI, I worked on projects that helped me develop my understanding of software development, application functionality, teamwork and user-focused solutions.
+
+In September 2026, I transitioned into a host-company placement at Linktank, where I work in Technical Support. This experience allows me to apply my problem-solving, communication and troubleshooting skills in a professional environment.
+
+## Professional Journey
+
+### CAPACITI | July – August 2026
+
+During my time at CAPACITI, I worked on AI-powered applications and software development projects. These projects exposed me to application functionality, user requirements, testing and collaborative development.
+
+### Linktank | September 2026 – Present
+
+At Linktank, I work in Technical Support, helping investigate technical issues, troubleshoot problems and communicate solutions. This role is helping me develop my customer-service, analytical and professional communication skills.
+
+## Projects
+
+### 1. Individual Chat Bot
+An AI chatbot project developed during my CAPACITI placement.
+
+[View Repository](https://github.com/Jada-Rinquest/Individual-Chat-Bot)
+
+### 2. MoodMuse Sparkle Suite
+An AI-related project that forms part of my CAPACITI development portfolio.
+
+[View Repository](https://github.com/Jada-Rinquest/moodmuse-sparkle-suite)
+
+### 3. Study Buddy AI
+An AI study-support project.
+
+[View Repository](https://github.com/Jada-Rinquest/Study-BuddyAI)
+
+### 4. Sparkle Studio AI
+An AI application project developed during my placement.
+
+[View Repository](https://github.com/Jada-Rinquest/sparkle-studio-ai)
+
+### 5. AI Chatbot
+A further AI chatbot project demonstrating my exposure to conversational AI application development.
+
+[View Repository](https://github.com/Jada-Rinquest/AI_Chatbot)
+
+## Agile Assessment Portfolio
+
+This section presents my Agile artefacts, evidence and reflections from my learning and industry placement journey.
+
+1. **Agile Team Charter** – Team purpose, responsibilities, values and working agreements.
+2. **User Stories and Tasks** – User needs, acceptance criteria and development tasks.
+3. **Product Backlog** – A prioritised list of features and requirements.
+4. **Sprint Backlog** – Selected work items and tasks planned for a sprint.
+5. **Agile Logbook** – Activities, challenges, progress and reflections across my placement.
+
+## Skills Developed
+
+- AI application development exposure
+- Quality assurance and software testing
+- Problem-solving and troubleshooting
+- Understanding user requirements
+- Teamwork and collaboration
+- Technical communication and documentation
+- Customer-focused technical support
+- Continuous learning and professional development
+
+## Reflection
+
+My journey from CAPACITI to Linktank has helped me understand how technical knowledge can be applied in different professional settings. Working on AI projects introduced me to software functionality, testing and user requirements, while my technical support role allows me to focus on investigating issues and helping users.
+
+I aim to continue improving my technical skills, building confidence in troubleshooting, and developing as an IT professional.
+
+## Contact
+
+**GitHub:** [Jada-Rinquest](https://github.com/Jada-Rinquest)
+
+Thank you for visiting my portfolio.
