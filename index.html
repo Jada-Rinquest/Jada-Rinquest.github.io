@@ -179,7 +179,6 @@ h1 {
     position: relative;
     display: inline-block;
 }
-    }
 
 /* ===== INTERACTIVE TABS COMPONENTS ===== */
 .tab-navigation {
@@ -359,8 +358,7 @@ h1 {
     padding: 14px;
     border-radius: 16px;
     text-decoration: none;
-
-        font-weight: 600;
+    font-weight: 600;
     font-size: 0.95rem;
     text-align: center;
     transition: all 0.25s ease;
@@ -476,15 +474,6 @@ tr:hover td {
     transform: translateY(0);
 }
 
-/* ===== AGILE PORTFOLIO VISIBILITY FIX ===== */
-/* Keep this section visible even if the scroll-reveal animation does not run. */
-#agile-portfolio {
-    opacity: 1 !important;
-    transform: none !important;
-    visibility: visible !important;
-    display: block !important;
-}
-
 /* ===== RESPONSIVE CONSTRAINTS ===== */
 @media (max-width: 1100px) {
     .portfolio-layout {
@@ -520,7 +509,7 @@ tr:hover td {
 </div>
 
 <div class="portfolio-layout">
-
+    
     <!-- STICKY LEFT COLUMN -->
     <aside class="sidebar-wrapper">
         <div class="profile-card">
@@ -528,7 +517,7 @@ tr:hover td {
                 <div class="meta-badge mb-3" style="width: max-content; padding: 6px 14px;">👋 HELLO, I'M</div>
                 <h1>Jada Rinquest</h1>
                 <p class="subtitle">IT Student · Technical Support<br>· Agile Enthusiast</p>
-
+                
                 <div class="meta-badges">
                     <div class="meta-badge mb-1">🎂 22 years</div>
                     <div class="meta-badge mb-2">📍 Cape Town, Western Cape</div>
@@ -542,7 +531,7 @@ tr:hover td {
                     <a href="assets/JadaRinquestCV.pdf" download class="btn btn-primary">📄 Download CV</a>
                     <a href="https://github.com/Jada-Rinquest/Jada-Rinquest.github.io/tree/main/assets" target="_blank" class="btn btn-secondary">🏆 Certificates</a>
                 </div>
-
+                
                 <div class="social-strip">
                     <a href="mailto:222871296@mycput.ac.za" title="Email">✉ Email</a>
                     <a href="https://www.linkedin.com/in/jada-rinquest-152a563aa" target="_blank" title="LinkedIn">LinkedIN</a>
@@ -554,15 +543,16 @@ tr:hover td {
 
     <!-- SCROLLABLE RIGHT COLUMN -->
     <main class="main-content">
-
+        
         <!-- ABOUT PROFILE -->
         <section class="content-card about-box reveal-element">
             I am a final-year student at the Cape Peninsula University of Technology, pursuing a Diploma in Information and Communication Technology. I am currently completing my Work Integrated Learning (WIL) industry placement at <strong>Linktank</strong>, where I work in Technical Support. I am passionate about using technology to solve real-world problems, and I am applying the Agile principles and AI skills I learned at Capaciti to improve support processes, assist clients with financial planning software, and ensure high customer satisfaction.
         </section>
-                <!-- CAPABILITIES & KNOWLEDGE -->
+
+        <!-- CAPABILITIES & KNOWLEDGE -->
         <section class="content-card reveal-element">
             <h2 class="section-title">Capabilities</h2>
-
+            
             <div class="sub-grid">
                 <div>
                     <h3 style="font-size:1.1rem; margin-bottom:12px; color:#5f4a6b;">Technical Stack</h3>
@@ -608,7 +598,7 @@ tr:hover td {
             <!-- TAB: EXPERIENCE -->
             <div id="experience" class="tab-content active">
                 <div class="interactive-timeline">
-
+                    
                     <div class="timeline-card" style="background: rgba(212, 176, 208, 0.2); border-color: #d4b0d0;">
                         <span class="date-badge">Aug 2026 – Present</span>
                         <h3>Technical Support (WIL Placement) — Linktank</h3>
@@ -703,7 +693,7 @@ tr:hover td {
         <!-- DYNAMIC PROJECT SHOWCASE -->
         <section class="content-card reveal-element">
             <h2 class="section-title">Projects Showcase</h2>
-
+            
             <div class="project-filters">
                 <button class="filter-chip active" onclick="filterProjects(this, 'all')">All Builds</button>
                 <button class="filter-chip" onclick="filterProjects(this, 'apps')">Applications &amp; Web</button>
@@ -759,10 +749,10 @@ tr:hover td {
                     </div>
                 </div>
             </div>
-                    </section>
+        </section>
 
         <!-- NEW SECTION: AGILE PORTFOLIO OF EVIDENCE -->
-        <section id="agile-portfolio" class="content-card reveal-element" style="border: 2px solid #d4b0d0;">
+        <section class="content-card reveal-element" style="border: 2px solid #d4b0d0;">
             <h2 class="section-title">Project Presentation 3 – Agile Portfolio of Evidence</h2>
             <p style="margin-bottom: 25px; line-height: 1.6; font-weight: 500;">Linktank Technical Support Project</p>
             <p style="margin-bottom: 25px; line-height: 1.6;">This section presents my Agile Portfolio of Evidence for Project Presentation 3. It demonstrates the planning, implementation, and reflection completed during my current industry placement at Linktank.</p>
@@ -772,7 +762,7 @@ tr:hover td {
             <div class="ref-card rf2" style="margin-bottom: 15px;">
                 <h4 style="margin-bottom: 10px;">Project Purpose</h4>
                 <p style="font-size: 0.95rem; line-height: 1.5;">The purpose of this project is to improve the efficiency and quality of the Technical Support department at Linktank. By defining clear working agreements, values, and boundaries, the team aims to reduce ticket resolution times, improve customer satisfaction, and ensure a consistent support experience for clients using financial planning platforms like AdviceTech and Xplan.</p>
-
+                
                 <h4 style="margin-top: 15px; margin-bottom: 10px;">Core Values</h4>
                 <ul style="padding-left: 20px; font-size: 0.95rem; line-height: 1.5;">
                     <li><strong>Communication:</strong> Maintain clear and patient communication with clients and advisors.</li>
@@ -799,7 +789,7 @@ tr:hover td {
             <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; margin: 30px 0 15px 0; color:#5f4a6b;">2. User Stories and Tasks</h3>
             <div class="ref-card rf1" style="margin-bottom: 15px;">
                 <p style="font-size: 0.95rem; margin-bottom: 15px;">User stories were created to describe the Linktank support requirements from the perspective of the end user (the client/advisor) and the support agent.</p>
-
+                
                 <h4 style="margin-bottom: 5px;">User Story 1 – Password Resets (Priority: High)</h4>
                 <p style="font-size: 0.9rem; margin-bottom: 5px;"><strong>As a</strong> Linktank client, <strong>I want</strong> to be able to reset my password quickly and securely <strong>so that</strong> I can regain access to my account.</p>
                 <ul style="padding-left: 20px; font-size: 0.9rem; margin-bottom: 15px;">
@@ -836,7 +826,7 @@ tr:hover td {
             <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; margin: 30px 0 15px 0; color:#5f4a6b;">3. Product Backlog</h3>
             <div class="ref-card rf3" style="margin-bottom: 15px;">
                 <p style="font-size: 0.95rem; margin-bottom: 15px;">The Product Backlog contains the features, improvements, and technical tasks required for the Linktank Technical Support Optimisation project.</p>
-
+                
                 <div class="table-container">
                     <table>
                         <thead>
@@ -856,46 +846,48 @@ tr:hover td {
                             <tr><td>PB06</td><td>Understand BA and Xplan system integration</td><td>Medium</td><td>In Progress</td></tr>
                             <tr><td>PB07</td><td>Gain independent access to client profiles</td><td>High</td><td>Completed</td></tr>
                             <tr><td>PB08</td><td>Master multitasking between multiple platforms</td><td>Medium</td><td>In Progress</td></tr>
+                            <tr><td>PB09</td><td>Escalate complex queries to AdviceTech support</td><td>High</td><td>Ongoing</td></tr>
                         </tbody>
                     </table>
                 </div>
 
                 <h4 style="margin-top: 15px; margin-bottom: 10px;">Evidence & Reflection</h4>
-                <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 10px;"><em>Evidence: Figure 5 – Product Backlog; Figure 6 – Prioritised list of support tasks.</em></p>
-                <p style="font-size: 0.95rem; line-height: 1.5;"><strong>Reflection:</strong> The Product Backlog helped me prioritise the most important tasks first. I learned that not every task has the same urgency, and that tasks related to client access and security need to be handled carefully. Keeping the backlog updated also made it easier to see which skills I had gained and which areas still needed work.</p>
+                <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 10px;"><em>Evidence: Figure 5 – Linktank Product Backlog; Figure 6 – Monthly WIL reports detailing the work completed.</em></p>
+                <p style="font-size: 0.95rem; line-height: 1.5;"><strong>Reflection:</strong> Creating and maintaining the Product Backlog helped me understand how to prioritise work effectively. The backlog allowed me to identify which skills and tasks were most important to the support team and the clients. I focused first on mastering password resets and advisor mappings because these had the highest impact on client satisfaction. One of the most important lessons I learned was that a Product Backlog is not static; it changes as new issues arise. For example, when I was introduced to the AdviceTech platform in Week 9, I had to reprioritize my learning goals to include troubleshooting that specific site. Overall, the Product Backlog gave the project structure and helped me manage my development in smaller, prioritised pieces.</p>
             </div>
 
             <!-- 4. Sprint Backlog -->
             <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; margin: 30px 0 15px 0; color:#5f4a6b;">4. Sprint Backlog</h3>
             <div class="ref-card rf1" style="margin-bottom: 15px;">
-                <p style="font-size: 0.95rem; margin-bottom: 15px;">The Sprint Backlog breaks down the selected product backlog items into focused stages of work.</p>
-
-                <h4 style="margin-top: 20px; margin-bottom: 5px;">Sprint 1 – Induction and Security</h4>
-                <p style="font-size: 0.9rem; margin-bottom: 10px;"><strong>Sprint Goal:</strong> Complete induction and learn the security procedures for client account support.</p>
+                <p style="font-size: 0.95rem; margin-bottom: 15px;">The Sprint Backlog was used to divide the project into smaller, more manageable stages. Each sprint focused on a specific goal.</p>
+                
+                <h4 style="margin-bottom: 5px;">Sprint 1 – Induction and Core Skills</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 10px;"><strong>Sprint Goal:</strong> Complete Linktank induction and master password reset procedures.</p>
                 <div class="table-container">
                     <table>
                         <thead>
                             <tr><th>Task</th><th>Priority</th><th>Status</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td>Complete Linktank induction</td><td>High</td><td>Completed</td></tr>
-                            <tr><td>Learn password reset procedures</td><td>High</td><td>Completed</td></tr>
-                            <tr><td>Learn client termination process</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>Complete induction and training</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>Learn how to assist clients via calls and emails</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>Master password resets and changes</td><td>High</td><td>Completed</td></tr>
                         </tbody>
                     </table>
                 </div>
 
-                <h4 style="margin-top: 20px; margin-bottom: 5px;">Sprint 2 – Client Support and Advisor Guidance</h4>
-                <p style="font-size: 0.9rem; margin-bottom: 10px;"><strong>Sprint Goal:</strong> Improve client support skills and assist advisors with mappings and FNA recommendations.</p>
+                <h4 style="margin-top: 20px; margin-bottom: 5px;">Sprint 2 – Advanced Client Assistance</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 10px;"><strong>Sprint Goal:</strong> Assist clients with advisor mappings, FNA recommendations, and terminations.</p>
                 <div class="table-container">
                     <table>
                         <thead>
                             <tr><th>Task</th><th>Priority</th><th>Status</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td>Assist clients through phone and email</td><td>High</td><td>Completed</td></tr>
-                            <tr><td>Learn advisor mappings</td><td>High</td><td>Completed</td></tr>
-                            <tr><td>Guide advisors through FNA recommendations</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>Learn advisor mappings process</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>Understand FNA recommendations</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>Set up remote sessions with clients</td><td>Medium</td><td>Completed</td></tr>
+                            <tr><td>Process client terminations</td><td>Medium</td><td>Completed</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -927,7 +919,7 @@ tr:hover td {
             <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; margin: 30px 0 15px 0; color:#5f4a6b;">5. Agile Logbook</h3>
             <div class="ref-card rf2" style="margin-bottom: 15px;">
                 <p style="font-size: 0.95rem; margin-bottom: 15px;">The Agile Logbook was used to document my daily activities, progress, challenges, and learning throughout my industry placement at Linktank.</p>
-
+                
                 <h4 style="margin-bottom: 10px;">Daily Stand-up Notes (Sample Week)</h4>
                 <div class="timeline-card" style="margin-bottom: 10px; background: rgba(255,255,255,0.7);">
                     <strong>Monday (Week 9)</strong><br>
@@ -993,7 +985,7 @@ function switchTab(event, tabId) {
     const card = event.target.closest('.content-card');
     card.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
     card.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-
+    
     event.target.classList.add('active');
     document.getElementById(tabId).classList.add('active');
 }
