@@ -4,13 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jada Rinquest Portfolio</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #ffe3ea, #f5f0ff, #e8fff7);
@@ -20,7 +23,7 @@ body {
     position: relative;
 }
 
-/* ===== ADVANCED MESH BLUR BACKGROUND ===== */
+/* Animated background */
 .animated-bg {
     position: fixed;
     top: 0;
@@ -31,6 +34,7 @@ body {
     pointer-events: none;
     overflow: hidden;
 }
+
 .floating-shape {
     position: absolute;
     border-radius: 50%;
@@ -39,20 +43,63 @@ body {
     mix-blend-mode: multiply;
     animation: floatAround 25s infinite ease-in-out;
 }
-.shape1 { width: 400px; height: 400px; background: #d4b0d0; top: -10%; left: -10%; animation-delay: 0s; }
-.shape2 { width: 350px; height: 350px; background: #b8d9d0; bottom: -5%; right: -5%; animation-delay: -5s; }
-.shape3 { width: 300px; height: 300px; background: #f5d4e8; top: 40%; left: 30%; animation-delay: -10s; }
-.shape4 { width: 250px; height: 250px; background: #ffe9ae; bottom: 20%; left: -5%; animation-delay: -3s; }
-.shape5 { width: 300px; height: 300px; background: #d8e8ff; top: 10%; right: 10%; animation-delay: -7s; }
 
-@keyframes floatAround {
-    0% { transform: translate(0,0) scale(1) rotate(0deg); }
-    33% { transform: translate(50px, 60px) scale(1.1) rotate(120deg); }
-    66% { transform: translate(-30px, -40px) scale(0.9) rotate(240deg); }
-    100% { transform: translate(0,0) scale(1) rotate(360deg); }
+.shape1 {
+    width: 400px;
+    height: 400px;
+    background: #d4b0d0;
+    top: -10%;
+    left: -10%;
 }
 
-/* ===== SPLIT LAYOUT ARCHITECTURE ===== */
+.shape2 {
+    width: 350px;
+    height: 350px;
+    background: #b8d9d0;
+    bottom: -5%;
+    right: -5%;
+}
+
+.shape3 {
+    width: 300px;
+    height: 300px;
+    background: #f5d4e8;
+    top: 40%;
+    left: 30%;
+}
+
+.shape4 {
+    width: 250px;
+    height: 250px;
+    background: #ffe9ae;
+    bottom: 20%;
+    left: -5%;
+}
+
+.shape5 {
+    width: 300px;
+    height: 300px;
+    background: #d8e8ff;
+    top: 10%;
+    right: 10%;
+}
+
+@keyframes floatAround {
+    0% {
+        transform: translate(0,0) scale(1) rotate(0deg);
+    }
+    33% {
+        transform: translate(50px, 60px) scale(1.1) rotate(120deg);
+    }
+    66% {
+        transform: translate(-30px, -40px) scale(0.9) rotate(240deg);
+    }
+    100% {
+        transform: translate(0,0) scale(1) rotate(360deg);
+    }
+}
+
+/* Main layout */
 .portfolio-layout {
     display: grid;
     grid-template-columns: 420px 1fr;
@@ -63,7 +110,7 @@ body {
     z-index: 1;
 }
 
-/* LEFT SIDEBAR: FIXED / STICKY */
+/* Sidebar */
 .sidebar-wrapper {
     padding: 40px 20px 40px 40px;
     position: sticky;
@@ -72,6 +119,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .profile-card {
     background: rgba(255, 255, 255, 0.45);
     backdrop-filter: blur(25px);
@@ -86,9 +134,11 @@ body {
     justify-content: space-between;
     transition: transform 0.3s ease;
 }
+
 .profile-card:hover {
     transform: translateY(-2px);
 }
+
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
@@ -98,17 +148,20 @@ h1 {
     -webkit-text-fill-color: transparent;
     margin: 15px 0 5px 0;
 }
+
 .subtitle {
     color: #5f4a6b;
     font-weight: 500;
     font-size: 1.05rem;
     margin-bottom: 25px;
 }
+
 .meta-badges {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .meta-badge {
     display: flex;
     align-items: center;
@@ -120,6 +173,7 @@ h1 {
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 .mb-1 { background: #ffd7e1; }
 .mb-2 { background: #d8f5e4; }
 .mb-3 { background: #ffe9ae; }
@@ -130,6 +184,7 @@ h1 {
     gap: 10px;
     margin-top: 25px;
 }
+
 .social-strip a {
     flex: 1;
     height: 50px;
@@ -144,19 +199,21 @@ h1 {
     font-weight: 600;
     transition: all 0.25s ease;
 }
+
 .social-strip a:hover {
     transform: translateY(-3px);
     background: #f5d4e8;
     box-shadow: 0 10px 15px rgba(212, 176, 208, 0.3);
 }
 
-/* RIGHT CONTENT: SCROLLABLE */
+/* Main content */
 .main-content {
     padding: 40px 40px 40px 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
+
 .content-card {
     background: rgba(255, 255, 255, 0.55);
     backdrop-filter: blur(20px);
@@ -166,12 +223,14 @@ h1 {
     padding: 40px;
     box-shadow: 0 15px 35px rgba(70, 52, 78, 0.03);
 }
+
 .about-box {
     font-size: 1.15rem;
     line-height: 1.7;
     color: #46344e;
     font-weight: 300;
 }
+
 .section-title {
     font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
@@ -180,7 +239,7 @@ h1 {
     display: inline-block;
 }
 
-/* ===== INTERACTIVE TABS COMPONENTS ===== */
+/* Tabs */
 .tab-navigation {
     display: flex;
     gap: 10px;
@@ -190,6 +249,7 @@ h1 {
     border-radius: 18px;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
+
 .tab-btn {
     flex: 1;
     padding: 12px;
@@ -202,30 +262,35 @@ h1 {
     border-radius: 14px;
     transition: all 0.25s ease;
 }
+
 .tab-btn.active {
     background: white;
     color: #46344e;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
+
 .tab-content {
     display: none;
 }
+
 .tab-content.active {
     display: block;
     animation: fadeIn 0.4s ease forwards;
 }
 
-/* ===== GRID SYSTEM FOR CONTENT INSIDE ===== */
+/* Grids */
 .sub-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
 }
+
 .tag-container {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
 }
+
 .tag-container span {
     padding: 10px 18px;
     border-radius: 999px;
@@ -233,18 +298,20 @@ h1 {
     font-size: 0.9rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.02);
 }
+
 .t1 { background: #ffd7e1; }
 .t2 { background: #e3d8ff; }
 .t3 { background: #d8f5e4; }
 .t4 { background: #ffe9ae; }
 .t5 { background: #d8e8ff; }
 
-/* Timeline design updates */
+/* Timeline */
 .interactive-timeline {
     position: relative;
     padding-left: 20px;
     border-left: 2px dashed rgba(212, 176, 208, 0.6);
 }
+
 .timeline-card {
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.6);
@@ -254,11 +321,13 @@ h1 {
     position: relative;
     transition: all 0.25s ease;
 }
+
 .timeline-card:hover {
     background: white;
     transform: translateX(4px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.03);
 }
+
 .timeline-card::before {
     content: '';
     position: absolute;
@@ -270,6 +339,7 @@ h1 {
     background: #d4b0d0;
     border: 2px solid white;
 }
+
 .timeline-card .date-badge {
     float: right;
     font-size: 0.8rem;
@@ -279,748 +349,9 @@ h1 {
     font-weight: 500;
     border: 1px solid rgba(0,0,0,0.05);
 }
+
 .timeline-card ul {
     padding-left: 18px;
     margin-top: 10px;
     font-size: 0.95rem;
 }
-
-/* Projects Showcase */
-.project-filters {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 20px;
-}
-.filter-chip {
-    padding: 6px 14px;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    background: rgba(255, 255, 255, 0.3);
-    font-size: 0.85rem;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    transition: all 0.2s;
-}
-.filter-chip.active, .filter-chip:hover {
-    background: white;
-    border-color: #d4b0d0;
-}
-.project-row {
-    padding: 25px;
-    border-radius: 24px;
-    margin-bottom: 15px;
-    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.project-row:hover {
-    transform: scale(1.01) translateY(-2px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.04);
-}
-.p-java { background: #ece2ff; }
-.p-ai { background: #dff8ef; }
-.p-web { background: #ffd7e1; }
-.project-links-group {
-    display: flex;
-    gap: 8px;
-}
-.project-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    background: white;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 600;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    transition: all 0.2s;
-    color: #46344e;
-}
-.project-link:hover {
-    transform: scale(1.1) rotate(10deg);
-    background: #46344e;
-    color: white;
-}
-
-/* Action items */
-.action-buttons {
-    display: flex;
-    gap: 12px;
-    margin-top: 15px;
-}
-.btn {
-    flex: 1;
-    padding: 14px;
-    border-radius: 16px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    text-align: center;
-    transition: all 0.25s ease;
-    font-family: 'Poppins', sans-serif;
-    border: none;
-    cursor: pointer;
-}
-.btn-primary { background: #f5d4e8; color: #46344e; }
-.btn-primary:hover { background: #edd0e0; transform: translateY(-3px); box-shadow: 0 8px 20px rgba(212, 176, 208, 0.3); }
-.btn-secondary { background: #d8e8ff; color: #46344e; }
-.btn-secondary:hover { background: #c8d8ef; transform: translateY(-3px); box-shadow: 0 8px 20px rgba(140, 180, 200, 0.2); }
-
-/* References Block */
-.ref-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-}
-.ref-card {
-    padding: 20px;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.rf1 { background: #ece7ff; }
-.rf2 { background: #dff8ef; }
-.rf3 { background: #ffd7e1; }
-
-/* Contact interface */
-.contact-layout {
-    display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 40px;
-}
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 16px;
-    margin-bottom: 15px;
-    border: 2px solid rgba(255,255,255,0.5);
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.4);
-    font-family: 'Poppins', sans-serif;
-    outline: none;
-    color: #46344e;
-    transition: all 0.25s;
-}
-.contact-form input:focus, .contact-form textarea:focus {
-    border-color: #d4b0d0;
-    background: white;
-    box-shadow: 0 0 0 4px rgba(212, 176, 208, 0.15);
-}
-.contact-form textarea { min-height: 140px; resize: none; }
-.submit-btn {
-    background: #f5d4e8;
-    border: none;
-    padding: 16px;
-    border-radius: 18px;
-    font-weight: 600;
-    width: 100%;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.25s;
-}
-.submit-btn:hover {
-    background: #edd0e0;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(212, 176, 208, 0.25);
-}
-
-/* ===== TABLE STYLES FOR AGILE BACKLOGS ===== */
-.table-container {
-    overflow-x: auto;
-    margin: 15px 0 25px 0;
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-}
-th, td {
-    padding: 14px 18px;
-    text-align: left;
-    border-bottom: 1px solid rgba(0,0,0,0.04);
-    font-size: 0.95rem;
-}
-th {
-    background: rgba(255, 255, 255, 0.7);
-    font-weight: 600;
-    color: #46344e;
-}
-tr:last-child td {
-    border-bottom: none;
-}
-tr:hover td {
-    background: rgba(255, 255, 255, 0.6);
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.reveal-element {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-.reveal-element.viewed {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* ===== RESPONSIVE CONSTRAINTS ===== */
-@media (max-width: 1100px) {
-    .portfolio-layout {
-        grid-template-columns: 1fr;
-    }
-    .sidebar-wrapper {
-        position: relative;
-        height: auto;
-        padding: 30px 30px 15px 30px;
-    }
-    .main-content {
-        padding: 15px 30px 30px 30px;
-    }
-}
-@media (max-width: 768px) {
-    .sub-grid, .contact-layout, .ref-grid {
-        grid-template-columns: 1fr;
-    }
-    body { padding: 0; }
-    .sidebar-wrapper, .main-content { padding: 20px; }
-    h1 { font-size: 2.5rem; }
-}
-</style>
-</head>
-<body>
-
-<div class="animated-bg">
-    <div class="floating-shape shape1"></div>
-    <div class="floating-shape shape2"></div>
-    <div class="floating-shape shape3"></div>
-    <div class="floating-shape shape4"></div>
-    <div class="floating-shape shape5"></div>
-</div>
-
-<div class="portfolio-layout">
-    
-    <!-- STICKY LEFT COLUMN -->
-    <aside class="sidebar-wrapper">
-        <div class="profile-card">
-            <div>
-                <div class="meta-badge mb-3" style="width: max-content; padding: 6px 14px;">👋 HELLO, I'M</div>
-                <h1>Jada Rinquest</h1>
-                <p class="subtitle">IT Student · Technical Support<br>· Agile Enthusiast</p>
-                
-                <div class="meta-badges">
-                    <div class="meta-badge mb-1">🎂 22 years</div>
-                    <div class="meta-badge mb-2">📍 Cape Town, Western Cape</div>
-                    <div class="meta-badge mb-3">🌍 English · Afrikaans</div>
-                    <div class="meta-badge mb-4">🚗 Driver's Licence</div>
-                </div>
-            </div>
-
-            <div>
-                <div class="action-buttons">
-                    <a href="assets/JadaRinquestCV.pdf" download class="btn btn-primary">📄 Download CV</a>
-                    <a href="https://github.com/Jada-Rinquest/Jada-Rinquest.github.io/tree/main/assets" target="_blank" class="btn btn-secondary">🏆 Certificates</a>
-                </div>
-                
-                <div class="social-strip">
-                    <a href="mailto:222871296@mycput.ac.za" title="Email">✉ Email</a>
-                    <a href="https://www.linkedin.com/in/jada-rinquest-152a563aa" target="_blank" title="LinkedIn">LinkedIN</a>
-                    <a href="https://github.com/Jada-Rinquest" target="_blank" title="GitHub">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <!-- SCROLLABLE RIGHT COLUMN -->
-    <main class="main-content">
-        
-        <!-- ABOUT PROFILE -->
-        <section class="content-card about-box reveal-element">
-            I am a final-year student at the Cape Peninsula University of Technology, pursuing a Diploma in Information and Communication Technology. I am currently completing my Work Integrated Learning (WIL) industry placement at <strong>Linktank</strong>, where I work in Technical Support. I am passionate about using technology to solve real-world problems, and I am applying the Agile principles and AI skills I learned at Capaciti to improve support processes, assist clients with financial planning software, and ensure high customer satisfaction.
-        </section>
-
-        <!-- CAPABILITIES & KNOWLEDGE -->
-        <section class="content-card reveal-element">
-            <h2 class="section-title">Capabilities</h2>
-            
-            <div class="sub-grid">
-                <div>
-                    <h3 style="font-size:1.1rem; margin-bottom:12px; color:#5f4a6b;">Technical Stack</h3>
-                    <div class="tag-container">
-                        <span class="t1">Technical Support</span>
-                        <span class="t2">AI Foundations</span>
-                        <span class="t3">Data Analysis</span>
-                        <span class="t4">Password Resets</span>
-                        <span class="t5">Java, SQL, HTML, CSS</span>
-                        <span class="t1">GitHub & Markdown</span>
-                    </div>
-                </div>
-                <div>
-                    <h3 style="font-size:1.1rem; margin-bottom:12px; color:#5f4a6b;">Soft Skills</h3>
-                    <div class="tag-container">
-                        <span class="t4">Problem Solving</span>
-                        <span class="t5">Teamwork</span>
-                        <span class="t3">Communication</span>
-                        <span class="t1">Multitasking</span>
-                        <span class="t2">Agile Project Management</span>
-                    </div>
-                </div>
-            </div>
-
-            <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.05);">
-                <h3 style="font-size:1.1rem; margin-bottom:12px; color:#5f4a6b;">Personal Interests</h3>
-                <div class="tag-container">
-                    <span class="t3">🚶 Walks with dogs</span>
-                    <span class="t4">🍰 Baking</span>
-                    <span class="t5">🚗 Car Enthusiast</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- EXPERIENCES & EDUCATION INTERACTIVE TABS -->
-        <section class="content-card reveal-element">
-            <nav class="tab-navigation">
-                <button class="tab-btn active" onclick="switchTab(event, 'experience')">Work History</button>
-                <button class="tab-btn" onclick="switchTab(event, 'education')">Education</button>
-                <button class="tab-btn" onclick="switchTab(event, 'references')">References</button>
-            </nav>
-
-            <!-- TAB: EXPERIENCE -->
-            <div id="experience" class="tab-content active">
-                <div class="interactive-timeline">
-                    
-                    <div class="timeline-card" style="background: rgba(212, 176, 208, 0.2); border-color: #d4b0d0;">
-                        <span class="date-badge">Aug 2026 – Present</span>
-                        <h3>Technical Support (WIL Placement) — Linktank</h3>
-                        <p style="color:#5f4a6b; font-size:0.9rem;">Cape Town</p>
-                        <ul>
-                            <li>Provide first-line technical support to clients via phone calls and emails.</li>
-                            <li>Assist clients with password resets, terminations, and refreshing client profiles.</li>
-                            <li>Guide clients through advisor mappings and FNA recommendations.</li>
-                            <li>Navigate and troubleshoot the AdviceTech platform, Xplan system, and IFA site.</li>
-                            <li>Escalate complex queries to AdviceTech support.</li>
-                            <li>Participate in daily Agile stand-up meetings.</li>
-                        </ul>
-                    </div>
-
-                    <div class="timeline-card" style="background: rgba(184, 217, 208, 0.2); border-color: #b8d9d0;">
-                        <span class="date-badge">Jul 2026 – Aug 2026</span>
-                        <h3>AI & Software Development Training — Capaciti (UVU Africa)</h3>
-                        <p style="color:#5f4a6b; font-size:0.9rem;">Cape Town</p>
-                        <ul>
-                            <li>Completed intensive training in AI Foundations, Chatbot Development, Content Generation, and Sentiment Analysis.</li>
-                            <li>Developed multiple AI-driven applications and managed source code using GitHub.</li>
-                        </ul>
-                    </div>
-
-                    <div class="timeline-card">
-                        <span class="date-badge">Nov 2025 – Jan 2026</span>
-                        <h3>Sales Assistant — Sterns</h3>
-                        <p style="color:#5f4a6b; font-size:0.9rem;">Tygervalley &amp; Canal Walk</p>
-                        <ul>
-                            <li>Customer assistance with jewellery selection</li>
-                            <li>POS systems &amp; transactions</li>
-                            <li>Merchandising &amp; store standards</li>
-                        </ul>
-                    </div>
-                    <div class="timeline-card">
-                        <span class="date-badge">Nov 2024 – Apr 2025</span>
-                        <h3>Sales Assistant — Sterns</h3>
-                        <p style="color:#5f4a6b; font-size:0.9rem;">Additional contract</p>
-                    </div>
-                    <div class="timeline-card">
-                        <span class="date-badge">Jun 2023 – Jan 2024</span>
-                        <h3>Sales Assistant — Sterns</h3>
-                    </div>
-                    <div class="timeline-card">
-                        <span class="date-badge">Feb 2022 – Apr 2023</span>
-                        <h3>Part-Time Bartender</h3>
-                        <p style="color:#5f4a6b; font-size:0.9rem;">Classic Cats Gin Bar</p>
-                    </div>
-                    <div class="timeline-card">
-                        <span class="date-badge">Apr 2022 – Dec 2022</span>
-                        <h3>Teacher's Assistant (Contract)</h3>
-                        <p style="color:#5f4a6b; font-size:0.9rem;">Roosendal High School</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- TAB: EDUCATION -->
-            <div id="education" class="tab-content">
-                <div class="interactive-timeline">
-                    <div class="timeline-card" style="background:#ffe5ee;">
-                        <span class="date-badge">2024 – Present</span>
-                        <h3>Diploma in Information and Communication Technology</h3>
-                        <p>Cape Peninsula University of Technology</p>
-                    </div>
-                    <div class="timeline-card" style="background:#dcecff;">
-                        <span class="date-badge">2021</span>
-                        <h3>National Senior Certificate (Grade 12)</h3>
-                        <p>Bellville Technical High School</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- TAB: REFERENCES -->
-            <div id="references" class="tab-content">
-                <div class="ref-grid">
-                    <div class="ref-card rf1">
-                        <strong>Abigail Rukuni</strong>
-                        <p style="font-size:0.9rem; margin-top:5px; color:#5f4a6b;">Linktank Manager/Mentor<br>abigailrukuni@linktank.co.za</p>
-                    </div>
-                    <div class="ref-card rf2">
-                        <strong>Quentin Strydom</strong>
-                        <p style="font-size:0.9rem; margin-top:5px; color:#5f4a6b;">Classic Cats<br>📞 068 254 2254</p>
-                    </div>
-                    <div class="ref-card rf3">
-                        <strong>Warren Meyer</strong>
-                        <p style="font-size:0.9rem; margin-top:5px; color:#5f4a6b;">Sterns Manager<br>📞 073 841 7640</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- DYNAMIC PROJECT SHOWCASE -->
-        <section class="content-card reveal-element">
-            <h2 class="section-title">Projects Showcase</h2>
-            
-            <div class="project-filters">
-                <button class="filter-chip active" onclick="filterProjects(this, 'all')">All Builds</button>
-                <button class="filter-chip" onclick="filterProjects(this, 'apps')">Applications &amp; Web</button>
-                <button class="filter-chip" onclick="filterProjects(this, 'ai')">Artificial Intelligence</button>
-            </div>
-
-            <div id="projects-container">
-                <!-- Project 1: Mood Muse -->
-                <div class="project-row p-web" data-category="apps">
-                    <div>
-                        <h3 style="font-size:1.15rem;">🔮 Mood Muse</h3>
-                        <p style="font-size:0.9rem; opacity:0.8; margin-top:4px;">A mood-tracking web app featuring a sentiment analysis AI engine to analyze user logs and track emotional wellness trends.</p>
-                    </div>
-                    <div class="project-links-group">
-                        <a href="https://github.com/Jada-Rinquest/moodmuse-sparkle-suite.git" target="_blank" class="project-link" title="Open Repository">Code</a>
-                        <a href="https://moodmuse-sparkle-suite.lovable.app" target="_blank" class="project-link" title="Open Application">Live</a>
-                    </div>
-                </div>
-
-                <!-- Project 2: Liquid Alchemy -->
-                <div class="project-row p-ai" data-category="ai">
-                    <div>
-                        <h3 style="font-size:1.15rem;">🍹 Liquid Alchemy Mixologist Chatbot</h3>
-                        <p style="font-size:0.9rem; opacity:0.8; margin-top:4px;">An AI-powered mixology assistant designed to generate custom cocktail recipes, suggest drink pairings, and provide interactive guidance.</p>
-                    </div>
-                    <div class="project-links-group">
-                        <a href="https://github.com/Jada-Rinquest/Individual-Chat-Bot.git" target="_blank" class="project-link" title="Open Repository">Code</a>
-                        <a href="https://liquid-alchemy-mixol-sch1.bolt.host" target="_blank" class="project-link" title="Open Application">Live</a>
-                    </div>
-                </div>
-
-                <!-- Project 3: SA Information Chatbot -->
-                <div class="project-row p-ai" data-category="ai">
-                    <div>
-                        <h3 style="font-size:1.15rem;">🤖 South African Information Chatbot</h3>
-                        <p style="font-size:0.9rem; opacity:0.8; margin-top:4px;">An intelligent conversational agent tailored to process, index, and retrieve localized South African regulatory, civic, or cultural data.</p>
-                    </div>
-                    <div class="project-links-group">
-                        <a href="https://github.com/Jada-Rinquest/AI_Chatbot.git" target="_blank" class="project-link" title="Open Repository">Code</a>
-                        <a href="https://cape-town-aid-guide.lovable.app/" target="_blank" class="project-link" title="Open Application">Live</a>
-                    </div>
-                </div>
-
-                <!-- Project 4: Sparkle Studio AI -->
-                <div class="project-row p-ai" data-category="ai">
-                    <div>
-                        <h3 style="font-size:1.15rem;">✨ Sparkle Studio AI</h3>
-                        <p style="font-size:0.9rem; opacity:0.8; margin-top:4px;">An AI-powered creative studio environment engineered to streamline digital asset generation or content workflows leveraging intelligent automation.</p>
-                    </div>
-                    <div class="project-links-group">
-                        <a href="https://github.com/Jada-Rinquest/sparkle-studio-ai.git" target="_blank" class="project-link" title="Open Repository">Code</a>
-                        <a href="https://gemini-fairy-tale.lovable.app" target="_blank" class="project-link" title="Open Application">Live</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- NEW SECTION: AGILE PORTFOLIO OF EVIDENCE -->
-        <section class="content-card reveal-element" style="border: 2px solid #d4b0d0;">
-            <h2 class="section-title">Project Presentation 3 – Agile Portfolio of Evidence</h2>
-            <p style="margin-bottom: 25px; line-height: 1.6; font-weight: 500;">Linktank Technical Support Project</p>
-            <p style="margin-bottom: 25px; line-height: 1.6;">This section presents my Agile Portfolio of Evidence for Project Presentation 3. It demonstrates the planning, implementation, and reflection completed during my current industry placement at Linktank.</p>
-
-            <!-- 1. Agile Team Charter -->
-            <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; margin: 30px 0 15px 0; color:#5f4a6b;">1. Agile Team Charter</h3>
-            <div class="ref-card rf2" style="margin-bottom: 15px;">
-                <h4 style="margin-bottom: 10px;">Project Purpose</h4>
-                <p style="font-size: 0.95rem; line-height: 1.5;">The purpose of this project is to improve the efficiency and quality of the Technical Support department at Linktank. By defining clear working agreements, values, and boundaries, the team aims to reduce ticket resolution times, improve customer satisfaction, and ensure a consistent support experience for clients using financial planning platforms like AdviceTech and Xplan.</p>
-                
-                <h4 style="margin-top: 15px; margin-bottom: 10px;">Core Values</h4>
-                <ul style="padding-left: 20px; font-size: 0.95rem; line-height: 1.5;">
-                    <li><strong>Communication:</strong> Maintain clear and patient communication with clients and advisors.</li>
-                    <li><strong>Accountability:</strong> Take ownership of queries and follow through to resolution.</li>
-                    <li><strong>Collaboration:</strong> Work together with the team (led by Mentor Abigail Rukuni) to solve complex software issues.</li>
-                    <li><strong>Security:</strong> Strictly verify information and follow security procedures during password resets.</li>
-                </ul>
-
-                <h4 style="margin-top: 15px; margin-bottom: 10px;">Working Agreements</h4>
-                <ul style="padding-left: 20px; font-size: 0.95rem; line-height: 1.5;">
-                    <li>Daily stand-up meetings at 9:00 AM with the team.</li>
-                    <li>All client interactions must be logged in the system.</li>
-                    <li>Verify client details before performing any password resets or terminations.</li>
-                    <li>Complex escalations must be routed to AdviceTech support promptly.</li>
-                    <li>Blockers must be raised immediately during stand-up.</li>
-                </ul>
-
-                <h4 style="margin-top: 15px; margin-bottom: 10px;">Evidence & Reflection</h4>
-                <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 10px;"><em>Evidence: Figure 1 – Agile Team Charter document; Figure 2 – Linktank induction and training notes.</em></p>
-                <p style="font-size: 0.95rem; line-height: 1.5;"><strong>Reflection:</strong> Creating the Agile Team Charter for the Linktank Technical Support team helped me understand the importance of establishing clear expectations in a professional environment. During my Capaciti training (Weeks 1-4), we worked on AI projects like the AI_Chatbot without a formal charter, which sometimes led to overlapping tasks. At Linktank, the charter provides a clear framework for how we work. It ensures that every team member understands the standards they must meet, especially regarding security and password resets. This experience has shown me that a strong team charter is a tool that improves communication, accountability, and overall team performance in a high-pressure support environment.</p>
-            </div>
-
-            <!-- 2. User Stories and Tasks -->
-            <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; margin: 30px 0 15px 0; color:#5f4a6b;">2. User Stories and Tasks</h3>
-            <div class="ref-card rf1" style="margin-bottom: 15px;">
-                <p style="font-size: 0.95rem; margin-bottom: 15px;">User stories were created to describe the Linktank support requirements from the perspective of the end user (the client/advisor) and the support agent.</p>
-                
-                <h4 style="margin-bottom: 5px;">User Story 1 – Password Resets (Priority: High)</h4>
-                <p style="font-size: 0.9rem; margin-bottom: 5px;"><strong>As a</strong> Linktank client, <strong>I want</strong> to be able to reset my password quickly and securely <strong>so that</strong> I can regain access to my account.</p>
-                <ul style="padding-left: 20px; font-size: 0.9rem; margin-bottom: 15px;">
-                    <li>Verify client identity over the phone or email.</li>
-                    <li>Follow security procedures to reset the password.</li>
-                    <li>Confirm with the client that they can log in successfully.</li>
-                    <li>Log the interaction in the system.</li>
-                </ul>
-
-                <h4 style="margin-bottom: 5px;">User Story 2 – Advisor Mappings and FNA Recommendations (Priority: High)</h4>
-                <p style="font-size: 0.9rem; margin-bottom: 5px;"><strong>As an</strong> Advisor, <strong>I want</strong> to ensure my client mappings and FNA recommendations are correct <strong>so that</strong> I can provide accurate financial advice.</p>
-                <ul style="padding-left: 20px; font-size: 0.9rem; margin-bottom: 15px;">
-                    <li>Navigate the AdviceTech platform and Xplan system.</li>
-                    <li>Test the mapping process to identify errors.</li>
-                    <li>Guide the advisor through the step-by-step process over the phone.</li>
-                    <li>Set up a remote session if necessary.</li>
-                </ul>
-
-                <h4 style="margin-bottom: 5px;">User Story 3 – Independent Client Access (Priority: Medium)</h4>
-                <p style="font-size: 0.9rem; margin-bottom: 5px;"><strong>As a</strong> Support Agent, <strong>I want</strong> independent access to client profiles <strong>so that</strong> I can refresh them and resolve queries faster.</p>
-                <ul style="padding-left: 20px; font-size: 0.9rem; margin-bottom: 15px;">
-                    <li>Get administrative access to the client database.</li>
-                    <li>Test the profile refresh function.</li>
-                    <li>Troubleshoot errors independently.</li>
-                    <li>Escalate unresolved issues to AdviceTech support.</li>
-                </ul>
-
-                <h4 style="margin-top: 15px; margin-bottom: 10px;">Evidence & Reflection</h4>
-                <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 10px;"><em>Evidence: Figure 3 – Documentation of user stories and tasks; Figure 4 – Screenshot of troubleshooting steps.</em></p>
-                <p style="font-size: 0.95rem; line-height: 1.5;"><strong>Reflection:</strong> Creating user stories helped me understand how to describe system requirements from the user's perspective rather than only focusing on technical details. In my Capaciti projects, like the Study-BuddyAI, I often approached development with a feature-first mindset. At Linktank, breaking each user story into smaller tasks made the work much easier to manage. For example, the simple task of resetting a password required verification, security checks, and client confirmation. This process improved my understanding of how a seemingly simple feature can involve multiple components. Overall, user stories helped me keep each improvement focused on the user's needs, while the individual tasks provided a clear plan for implementation.</p>
-            </div>
-
-            <!-- 3. Product Backlog -->
-            <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; margin: 30px 0 15px 0; color:#5f4a6b;">3. Product Backlog</h3>
-            <div class="ref-card rf3" style="margin-bottom: 15px;">
-                <p style="font-size: 0.95rem; margin-bottom: 15px;">The Product Backlog contains the features, improvements, and technical tasks required for the Linktank Technical Support Optimisation project.</p>
-                
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Product Backlog Item</th>
-                                <th>Priority</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>PB01</td><td>Complete Linktank induction and training</td><td>High</td><td>Completed</td></tr>
-                            <tr><td>PB02</td><td>Master password reset procedures via calls and emails</td><td>High</td><td>Completed</td></tr>
-                            <tr><td>PB03</td><td>Learn advisor mappings and FNA recommendations</td><td>High</td><td>Completed</td></tr>
-                            <tr><td>PB04</td><td>Familiarize with AdviceTech platform and IFA site</td><td>High</td><td>Completed</td></tr>
-                            <tr><td>PB05</td><td>Test AdviceTech site to improve troubleshooting skills</td><td>Medium</td><td>Completed</td></tr>
-                            <tr><td>PB06</td><td>Understand BA and Xplan system integration</td><td>Medium</td><td>In Progress</td></tr>
-                            <tr><td>PB07</td><td>Gain independent access to client profiles</td><td>High</td><td>Completed</td></tr>
-                            <tr><td>PB08</td><td>Master multitasking between multiple platforms</td><td>Medium</td><td>In Progress</td></tr>
-                            <tr><td>PB09</td><td>Escalate complex queries to AdviceTech support</td><td>High</td><td>Ongoing</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h4 style="margin-top: 15px; margin-bottom: 10px;">Evidence & Reflection</h4>
-                <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 10px;"><em>Evidence: Figure 5 – Linktank Product Backlog; Figure 6 – Monthly WIL reports detailing the work completed.</em></p>
-                <p style="font-size: 0.95rem; line-height: 1.5;"><strong>Reflection:</strong> Creating and maintaining the Product Backlog helped me understand how to prioritise work effectively. The backlog allowed me to identify which skills and tasks were most important to the support team and the clients. I focused first on mastering password resets and advisor mappings because these had the highest impact on client satisfaction. One of the most important lessons I learned was that a Product Backlog is not static; it changes as new issues arise. For example, when I was introduced to the AdviceTech platform in Week 9, I had to reprioritize my learning goals to include troubleshooting that specific site. Overall, the Product Backlog gave the project structure and helped me manage my development in smaller, prioritised pieces.</p>
-            </div>
-
-            <!-- 4. Sprint Backlog -->
-            <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; margin: 30px 0 15px 0; color:#5f4a6b;">4. Sprint Backlog</h3>
-            <div class="ref-card rf1" style="margin-bottom: 15px;">
-                <p style="font-size: 0.95rem; margin-bottom: 15px;">The Sprint Backlog was used to divide the project into smaller, more manageable stages. Each sprint focused on a specific goal.</p>
-                
-                <h4 style="margin-bottom: 5px;">Sprint 1 – Induction and Core Skills</h4>
-                <p style="font-size: 0.9rem; margin-bottom: 10px;"><strong>Sprint Goal:</strong> Complete Linktank induction and master password reset procedures.</p>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr><th>Task</th><th>Priority</th><th>Status</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Complete induction and training</td><td>High</td><td>Completed</td></tr>
-                            <tr><td>Learn how to assist clients via calls and emails</td><td>High</td><td>Completed</td></tr>
-                            <tr><td>Master password resets and changes</td><td>High</td><td>Completed</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h4 style="margin-top: 20px; margin-bottom: 5px;">Sprint 2 – Advanced Client Assistance</h4>
-                <p style="font-size: 0.9rem; margin-bottom: 10px;"><strong>Sprint Goal:</strong> Assist clients with advisor mappings, FNA recommendations, and terminations.</p>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr><th>Task</th><th>Priority</th><th>Status</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Learn advisor mappings process</td><td>High</td><td>Completed</td></tr>
-                            <tr><td>Understand FNA recommendations</td><td>High</td><td>Completed</td></tr>
-                            <tr><td>Set up remote sessions with clients</td><td>Medium</td><td>Completed</td></tr>
-                            <tr><td>Process client terminations</td><td>Medium</td><td>Completed</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h4 style="margin-top: 20px; margin-bottom: 5px;">Sprint 3 – Platform Familiarisation and Independence</h4>
-                <p style="font-size: 0.9rem; margin-bottom: 10px;"><strong>Sprint Goal:</strong> Familiarize with AdviceTech, Xplan, and gain independent client access.</p>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr><th>Task</th><th>Priority</th><th>Status</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Get introduced to AdviceTech platform</td><td>High</td><td>Completed</td></tr>
-                            <tr><td>Learn to escalate queries to AdviceTech support</td><td>High</td><td>Completed</td></tr>
-                            <tr><td>Test AdviceTech site for troubleshooting</td><td>Medium</td><td>Completed</td></tr>
-                            <tr><td>Understand BA and Xplan system integration</td><td>Medium</td><td>In Progress</td></tr>
-                            <tr><td>Gain independent access to client profiles</td><td>High</td><td>Completed</td></tr>
-                            <tr><td>Master multitasking across platforms</td><td>Medium</td><td>In Progress</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h4 style="margin-top: 15px; margin-bottom: 10px;">Evidence & Reflection</h4>
-                <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 10px;"><em>Evidence: Figure 7 – Sprint Backlog; Figure 8 – Sprint tracking document showing task progress.</em></p>
-                <p style="font-size: 0.95rem; line-height: 1.5;"><strong>Reflection:</strong> Using a Sprint Backlog helped me divide the project into smaller, more manageable stages. Instead of trying to learn everything about the software at once, I could focus on one sprint goal at a time. For example, during my Individual-Chat-Bot project at Capaciti, I underestimated how long tasks would take, which led to a rushed delivery. At Linktank, breaking the work into sprints has allowed me to master password resets before moving on to complex tasks like advisor mappings and Xplan integration. This experience has taught me the value of working incrementally and monitoring my progress against achievable goals.</p>
-            </div>
-
-            <!-- 5. Agile Logbook -->
-            <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; margin: 30px 0 15px 0; color:#5f4a6b;">5. Agile Logbook</h3>
-            <div class="ref-card rf2" style="margin-bottom: 15px;">
-                <p style="font-size: 0.95rem; margin-bottom: 15px;">The Agile Logbook was used to document my daily activities, progress, challenges, and learning throughout my industry placement at Linktank.</p>
-                
-                <h4 style="margin-bottom: 10px;">Daily Stand-up Notes (Sample Week)</h4>
-                <div class="timeline-card" style="margin-bottom: 10px; background: rgba(255,255,255,0.7);">
-                    <strong>Monday (Week 9)</strong><br>
-                    <span style="font-size:0.9rem;"><strong>Yesterday:</strong> Finished assisting clients with terminations and FNA recommendations.<br>
-                    <strong>Today:</strong> Getting introduced to the AdviceTech platform and IFA site.<br>
-                    <strong>Blockers:</strong> None.</span>
-                </div>
-                <div class="timeline-card" style="margin-bottom: 10px; background: rgba(255,255,255,0.7);">
-                    <strong>Tuesday (Week 10)</strong><br>
-                    <span style="font-size:0.9rem;"><strong>Yesterday:</strong> Familiarized with AdviceTech and learned how to escalate queries.<br>
-                    <strong>Today:</strong> Testing AdviceTech to better my troubleshooting skills for clients.<br>
-                    <strong>Blockers:</strong> Need to understand how the BA works with the Xplan system.</span>
-                </div>
-                <div class="timeline-card" style="margin-bottom: 20px; background: rgba(255,255,255,0.7);">
-                    <strong>Wednesday (Week 11)</strong><br>
-                    <span style="font-size:0.9rem;"><strong>Yesterday:</strong> Got access to clients to refresh their profiles.<br>
-                    <strong>Today:</strong> Working on more queries independently and multitasking.<br>
-                    <strong>Blockers:</strong> Time management—juggling multiple platforms at once.</span>
-                </div>
-
-                <h4 style="margin-bottom: 10px;">Sprint Retrospective Notes</h4>
-                <p style="font-size: 0.95rem; margin-bottom: 5px;"><strong>What went well:</strong> The team (led by Abigail Rukuni) was very supportive during my induction. I successfully learned how to navigate clients through step-by-step processes. I gained independent access to client profiles and can now refresh them myself.</p>
-                <p style="font-size: 0.95rem; margin-bottom: 5px;"><strong>What didn't go well:</strong> Multitasking between AdviceTech, Xplan, and the IFA site initially felt overwhelming. Some complex queries took longer to resolve while I was still learning the BA and Xplan integration.</p>
-                <p style="font-size: 0.95rem; margin-bottom: 15px;"><strong>Action Items:</strong> Continue testing AdviceTech to improve troubleshooting speed. Take notes on the Xplan integration to reduce dependency on escalations. Practice time management techniques to juggle multiple platforms efficiently.</p>
-
-                <h4 style="margin-top: 15px; margin-bottom: 10px;">Evidence & Reflection</h4>
-                <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 10px;"><em>Evidence: Figure 9 – Agile Logbook showing daily stand-up notes; Figure 10 – Monthly Attendance Register showing my daily hours at Linktank.</em></p>
-                <p style="font-size: 0.95rem; line-height: 1.5;"><strong>Reflection:</strong> Maintaining an Agile Logbook throughout my placement has helped me track my activities and reflect on my learning and development. At the beginning of my placement at Linktank, much of my work focused on understanding the problem, completing induction, and learning password resets. As the project progressed, I moved into more complex tasks like advisor mappings, FNA recommendations, and eventually independent client profile management. The logbook helped me identify patterns, such as my initial struggle with multitasking. By recording these challenges in the logbook and raising them in retrospectives, I was able to implement action items that improved my workflow. Overall, the Agile Logbook has been an invaluable tool for monitoring my progress, identifying areas for improvement, and developing my skills in Agile project management.</p>
-            </div>
-        </section>
-
-        <!-- VIDEO SECTION -->
-        <section class="content-card reveal-element">
-            <h2 class="section-title">Interview Presentation</h2>
-            <video width="100%" controls style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                <source src="video/interview.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </section>
-
-        <!-- CONNECT BOX -->
-        <section class="content-card reveal-element">
-            <h2 class="section-title">📬 Drop a Message</h2>
-            <div class="contact-layout">
-                <form class="contact-form" action="mailto:222871296@mycput.ac.za" method="POST" enctype="text/plain">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <textarea name="message" placeholder="Type your message here..." required></textarea>
-                    <button type="submit" class="submit-btn">✉ Send Direct Message</button>
-                </form>
-                <div>
-                    <h3 style="font-family:'Playfair Display',serif; font-size:1.3rem; margin-bottom:10px;">Let's Build</h3>
-                    <p style="font-size:0.95rem; line-height:1.6; color:#5f4a6b;">I am wide open to software internships, technology collaborations, or system engineering challenges. Drop your information here and lets configure something new.</p>
-                </div>
-            </div>
-        </section>
-
-    </main>
-</div>
-
-<script>
-// Tab Switching logic
-function switchTab(event, tabId) {
-    const card = event.target.closest('.content-card');
-    card.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-    card.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-    
-    event.target.classList.add('active');
-    document.getElementById(tabId).classList.add('active');
-}
-
-// Project Sorting filter
-function filterProjects(element, category) {
-    // Handle Active Button styling safely
-    const chips = document.querySelectorAll('.filter-chip');
-    chips.forEach(chip => chip.classList.remove('active'));
-    element.classList.add('active');
-
-    // Filter projects logic
-    const projects = document.querySelectorAll('.project-row');
-    projects.forEach(project => {
-        if (category === 'all' || project.getAttribute('data-category') === category) {
-            project.style.display = 'flex';
-            project.style.animation = 'fadeIn 0.3s ease forwards';
-        } else {
-            project.style.display = 'none';
-        }
-    });
-}
-
-// Optimization scroll physics view checker
-const elementsToReveal = document.querySelectorAll('.reveal-element');
-const viewObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('viewed');
-        }
-    });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-elementsToReveal.forEach(el => viewObserver.observe(el));
-</script>
-
-</body>
-</html>
