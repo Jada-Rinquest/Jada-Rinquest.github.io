@@ -951,13 +951,34 @@ tr:hover td {
             </div>
         </section>
 
-        <!-- VIDEO SECTION -->
-        <section class="content-card reveal-element">
-            <h2 class="section-title">Interview Presentation</h2>
-            <video width="100%" controls style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                <source src="interview.mp4" type="mp4">
-            </video>
-        </section>
+ 
+<!-- VIDEO SECTION -->
+<section class="content-card reveal-element" id="interview-video">
+
+    <h2 class="section-title">Interview Presentation</h2>
+
+    <p>
+        Watch my interview presentation below.
+    </p>
+
+    <video
+        controls
+        preload="metadata"
+        playsinline
+        style="display: block; width: 100%; max-width: 900px;
+               height: auto; margin: 20px auto;
+               border-radius: 20px;
+               box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+
+        <source src="./interview.mp4" type="video/mp4">
+
+        Your browser does not support HTML video.
+        <a href="./interview.mp4">Click here to open the interview video.</a>
+
+    </video>
+
+</section>
+
 
         <!-- CONNECT BOX -->
         <section class="content-card reveal-element">
