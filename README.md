@@ -4,9 +4,10 @@
 
 ---
 
-## PROFESSIONAL OVERVIEW
+## Professional Overview
 
-Information Technology diploma student with a strong interest in building practical software using Java and JavaScript while continuously learning modern frameworks. Adaptable in different environments, always open to learning new things and committed to delivering high-quality work. Strong communication skills, teamwork ability, and a disciplined work ethic in every project.
+I am a final-year student at the Cape Peninsula University of Technology, pursuing a Diploma in Information and Communication Technology. I am currently completing my Work Integrated Learning (WIL) industry placement at **Linktank**, where I work in Technical Support. I am passionate about using technology to solve real-world problems, and I am applying the Agile principles and AI skills I learned at Capaciti to improve support processes, assist clients with financial planning software, and ensure high customer satisfaction.
+
 
 ---
 
@@ -45,28 +46,36 @@ Information Technology diploma student with a strong interest in building practi
 
 ---
 
-## EDUCATION
+## Education
 
-**Diploma in Information Technology**  
+**Diploma in Information and Communication Technology**  
 Cape Peninsula University of Technology  
-*2024 – Present*  
+2024 – Present
 
 **National Senior Certificate (Grade 12)**  
 Bellville Technical High School  
-*2021*  
+[Year Completed]
+
+
 
 ---
 
-## TECHNICAL SKILLS
+## Skills
 
-- Coding  
-- Java, SQL  
-- UX/UI Design  
-- Customer Service  
-- Communication Skills  
-- Teamwork  
-- Time Management  
-- Ability to Work Under Pressure  
+### Technical Skills
+*   Technical Support & Troubleshooting (AdviceTech, Xplan, IFA site)
+*   AI Foundations & Chatbot Development
+*   Data Analysis & Sentiment Analysis
+*   Password Resets & Client Profile Management
+*   Java, SQL, HTML, CSS
+*   GitHub & Markdown
+
+### Soft Skills
+*   Communication & Customer Service
+*   Multitasking & Time Management
+*   Problem-Solving
+*   Adaptability
+*   Agile Project Management
 
 ---
 <video width="600" controls>
@@ -75,151 +84,238 @@ Bellville Technical High School
 </video>
 ---
 
-## ACADEMIC PROJECTS
 
-### Student Accommodation Mobile App
-- Developed a mobile application allowing students to apply for accommodation  
-- Focused on usability, data handling, and practical functionality  
+## Industry Experience
 
-### Student Project Registration Database
-- Designed a database system for students to register and deregister for projects  
-- Created tables, relationships, and basic queries to manage data  
+### Technical Support (WIL Placement)
+**Linktank** | Cape Town  
+*August 2026 – Present*
+*   Provide first-line technical support to clients via phone calls and emails.
+*   Assist clients with password resets, terminations, and refreshing client profiles.
+*   Guide clients through advisor mappings and FNA (Financial Needs Analysis) recommendations.
+*   Navigate and troubleshoot the AdviceTech platform, Xplan system, and IFA site.
+*   Escalate complex queries to AdviceTech support.
+*   Participate in daily Agile stand-up meetings.
 
----
-
-## REFERENCES
-
-**Warren Meyer**  
-Manager, Sterns TFG  
-📞 073 841 7640  
-
-**Quentin Strydom**  
-Owner, Classic Cats  
-📞 068 254 2254  
+### AI & Software Development Training
+**Capaciti (UVU Africa)** | Cape Town  
+*July 2026 – August 2026*
+*   Completed intensive training in AI Foundations, Chatbot Development, Content Generation, and Sentiment Analysis.
+*   Developed multiple AI-driven applications and managed source code using GitHub.
+*   (Projects: [AI_Chatbot](https://github.com/Jada-Rinquest/AI_Chatbot.git), [Study-BuddyAI](https://github.com/Jada-Rinquest/Study-BuddyAI.git), [Individual-Chat-Bot](https://github.com/Jada-Rinquest/Individual-Chat-Bot.git), [moodmuse-sparkle-suite](https://github.com/Jada-Rinquest/moodmuse-sparkle-suite.git), [sparkle-studio-ai](https://github.com/Jada-Rinquest/sparkle-studio-ai.git))
 
 ---
 
-## REFLECTION
-### Reflection on Coding in Markdown (STAR Method)
+# Project Presentation 3 – Agile Portfolio of Evidence
 
-**Situation:**  
-As part of creating my digital portfolio, I had to learn how to use Markdown to structure and present my CV on GitHub.
+## Linktank Technical Support Project
 
-**Task:**  
-My task was to convert my CV into Markdown format while making sure it remained professional, readable, and well-organised.
+This section presents my Agile Portfolio of Evidence for Project Presentation 3. It demonstrates the planning, implementation, and reflection completed during my current industry placement at Linktank. The portfolio includes evidence and reflections for the following areas:
 
-**Action:**  
-At first, I found Markdown confusing because I was not used to writing code for formatting. I struggled with things like headings, spacing, and aligning content properly. Instead of giving up, I practiced using different Markdown features such as headings, bullet points, and bold text. I kept testing my work on GitHub to see how it displayed and fixed mistakes until it looked correct.
+*   Agile Team Charter
+*   User Stories and Tasks
+*   Product Backlog
+*   Sprint Backlog
+*   Agile Logbook
 
-**Result:**  
-Through this process, I improved my attention to detail and problem-solving skills. I became more comfortable using Markdown and now understand how developers structure content clearly. This experience showed me that even if I struggle at first, practicing consistently helps me improve and achieve a professional result.
+---
 
-### Reflection on Mock Interview Experience (STAR Method)
+## 1. Agile Team Charter
 
-**Situation:**  
-I participated in a mock interview as part of my work readiness training to prepare for real-world job interviews.
+### Project Name
+**Linktank Technical Support Optimisation**
 
-**Task:**  
-I needed to present myself professionally, answer questions confidently, and demonstrate my skills and personality effectively.
+### Project Purpose
+The purpose of this project is to improve the efficiency and quality of the Technical Support department at Linktank. By defining clear working agreements, values, and boundaries, the team aims to reduce ticket resolution times, improve customer satisfaction, and ensure a consistent support experience for clients using financial planning platforms like AdviceTech and Xplan.
 
-**Action:**  
-Initially, I felt nervous and unsure about how to answer certain questions, especially when I had to think on the spot. Some of my answers were not well-structured at first. However, I did not give up. I practiced answering common interview questions and focused on improving how I spoke, including my tone, confidence, and clarity. I also worked on staying calm and thinking before responding.
+### Project Objectives
+*   Reduce average client query resolution time.
+*   Increase first-contact resolution rates for password resets.
+*   Ensure accurate advisor mappings and FNA recommendations.
+*   Standardize the escalation process to AdviceTech support.
+*   Master multitasking between the IFA site, Xplan, and AdviceTech.
 
-**Result:**  
-By the end of the process, I became more confident in expressing myself and answering questions clearly. I learned the importance of preparation and communication during interviews. This experience helped me develop confidence, adaptability, and better problem-solving skills, which will be valuable in real interview situations.
+### Core Values
+*   **Communication:** Maintain clear and patient communication with clients and advisors.
+*   **Accountability:** Take ownership of queries and follow through to resolution.
+*   **Collaboration:** Work together with the team (led by Mentor Abigail Rukuni) to solve complex software issues.
+*   **Security:** Strictly verify information and follow security procedures during password resets.
 
-### Reflection on Using GitHub Pages (STAR Method)
+### Working Agreements
+*   Daily stand-up meetings at 9:00 AM with the team.
+*   All client interactions must be logged in the system.
+*   Verify client details before performing any password resets or terminations.
+*   Complex escalations must be routed to AdviceTech support promptly.
+*   Blockers must be raised immediately during stand-up.
 
-**Situation:**  
-As part of the portfolio project, I was required to publish my work using GitHub Pages to create an online digital portfolio.
+### Definition of Done
+A support query is considered complete when:
+*   The client's issue (e.g., password reset, advisor mapping) has been resolved.
+*   The client's profile has been refreshed and verified.
+*   The client has been informed of the resolution over the phone or via email.
 
-**Task:**  
-My task was to take my GitHub repository and successfully deploy it as a live website that showcases my CV, mock interview, and reflections.
+### Evidence
+The following evidence demonstrates the Agile Team Charter for this project:
+*   **Figure 1:** Agile Team Charter document outlining the team's purpose, values, and working agreements at Linktank.
+*   **Figure 2:** Linktank induction and training notes.
 
-**Action:**  
-At first, I found the process challenging because I had never used GitHub Pages before. I struggled with understanding how to publish the site and make sure everything displayed correctly. I explored the settings, followed the required steps, and kept testing my link. When things did not work, I went back to fix errors and tried again until the site was successfully published.
+### Reflection
+Creating the Agile Team Charter for the Linktank Technical Support team helped me understand the importance of establishing clear expectations in a professional environment. During my Capaciti training (Weeks 1-4), we worked on AI projects like the *AI_Chatbot* without a formal charter, which sometimes led to overlapping tasks. At Linktank, the charter provides a clear framework for how we work. It ensures that every team member understands the standards they must meet, especially regarding security and password resets. This experience has shown me that a strong team charter is a tool that improves communication, accountability, and overall team performance in a high-pressure support environment.
 
-**Result:**  
-I successfully created and deployed my digital portfolio online. This experience helped me understand how GitHub can be used not just for coding, but also for presenting work professionally. I developed patience, technical skills, and confidence in using new tools, and I now feel more prepared to showcase my work digitally in the future.
+---
 
-# Jada Rinquest | Professional Portfolio 2026
+## 2. User Stories and Tasks
 
-Welcome to my professional portfolio. This repository documents my learning journey, projects, practical experience and professional development during my industry placement.
+User stories were created to describe the Linktank support requirements from the perspective of the end user (the client/advisor) and the support agent. The format used was: **As a [type of user], I want [functionality], so that [benefit].** Each user story was then divided into smaller development tasks.
 
-My portfolio showcases my software development and AI project experience at CAPACITI, followed by my transition into a Technical Support role at Linktank.
+### User Story 1 – Password Resets
+**User Story:** As a Linktank client, I want to be able to reset my password quickly and securely so that I can regain access to my account.
+**Tasks:**
+*   Verify client identity over the phone or email.
+*   Follow security procedures to reset the password.
+*   Confirm with the client that they can log in successfully.
+*   Log the interaction in the system.
+**Priority:** High
 
-## About Me
+### User Story 2 – Advisor Mappings and FNA Recommendations
+**User Story:** As an Advisor, I want to ensure my client mappings and FNA recommendations are correct so that I can provide accurate financial advice.
+**Tasks:**
+*   Navigate the AdviceTech platform and Xplan system.
+*   Test the mapping process to identify errors.
+*   Guide the advisor through the step-by-step process over the phone.
+*   Set up a remote session if necessary.
+**Priority:** High
 
-I am a developing IT professional with experience in AI application projects, software testing, problem-solving and technical support. During my placement at CAPACITI, I worked on projects that helped me develop my understanding of software development, application functionality, teamwork and user-focused solutions.
+### User Story 3 – Independent Client Access
+**User Story:** As a Support Agent, I want independent access to client profiles so that I can refresh them and resolve queries faster.
+**Tasks:**
+*   Get administrative access to the client database.
+*   Test the profile refresh function.
+*   Troubleshoot errors independently.
+*   Escalate unresolved issues to AdviceTech support.
+**Priority:** Medium
 
-In September 2026, I transitioned into a host-company placement at Linktank, where I work in Technical Support. This experience allows me to apply my problem-solving, communication and troubleshooting skills in a professional environment.
+### Evidence
+The following evidence demonstrates how requirements were converted into user stories and tasks:
+*   **Figure 3:** Documentation of user stories and tasks in the internal tracking sheet.
+*   **Figure 4:** Screenshot of the AdviceTech and Xplan troubleshooting steps.
 
-## Professional Journey
+### Reflection
+Creating user stories helped me understand how to describe system requirements from the user's perspective rather than only focusing on technical details. In my Capaciti projects, like the *Study-BuddyAI*, I often approached development with a feature-first mindset. At Linktank, breaking each user story into smaller tasks made the work much easier to manage. For example, the simple task of resetting a password required verification, security checks, and client confirmation. This process improved my understanding of how a seemingly simple feature can involve multiple components. Overall, user stories helped me keep each improvement focused on the user's needs, while the individual tasks provided a clear plan for implementation.
 
-### CAPACITI | July – August 2026
+---
 
-During my time at CAPACITI, I worked on AI-powered applications and software development projects. These projects exposed me to application functionality, user requirements, testing and collaborative development.
+## 3. Product Backlog
 
-### Linktank | September 2026 – Present
+The Product Backlog contains the features, improvements, and technical tasks required for the Linktank Technical Support Optimisation project. The backlog was prioritised according to the importance of each requirement.
 
-At Linktank, I work in Technical Support, helping investigate technical issues, troubleshoot problems and communicate solutions. This role is helping me develop my customer-service, analytical and professional communication skills.
+| ID | Product Backlog Item | Priority | Status |
+| :--- | :--- | :--- | :--- |
+| PB01 | Complete Linktank induction and training | High | Completed |
+| PB02 | Master password reset procedures via calls and emails | High | Completed |
+| PB03 | Learn advisor mappings and FNA recommendations | High | Completed |
+| PB04 | Familiarize with AdviceTech platform and IFA site | High | Completed |
+| PB05 | Test AdviceTech site to improve troubleshooting skills | Medium | Completed |
+| PB06 | Understand BA and Xplan system integration | Medium | In Progress |
+| PB07 | Gain independent access to client profiles | High | Completed |
+| PB08 | Master multitasking between multiple platforms | Medium | In Progress |
+| PB09 | Escalate complex queries to AdviceTech support | High | Ongoing |
 
-## Projects
+### Evidence
+The following evidence demonstrates how the Product Backlog was used to organise and prioritise project requirements:
+*   **Figure 5:** Linktank Product Backlog showing prioritised support tasks.
+*   **Figure 6:** Monthly WIL reports detailing the work completed.
 
-### 1. Individual Chat Bot
-An AI chatbot project developed during my CAPACITI placement.
+### Reflection
+Creating and maintaining the Product Backlog helped me understand how to prioritise work effectively. The backlog allowed me to identify which skills and tasks were most important to the support team and the clients. I focused first on mastering password resets and advisor mappings because these had the highest impact on client satisfaction. One of the most important lessons I learned was that a Product Backlog is not static; it changes as new issues arise. For example, when I was introduced to the AdviceTech platform in Week 9, I had to reprioritize my learning goals to include troubleshooting that specific site. Overall, the Product Backlog gave the project structure and helped me manage my development in smaller, prioritised pieces.
 
-[View Repository](https://github.com/Jada-Rinquest/Individual-Chat-Bot)
+---
 
-### 2. MoodMuse Sparkle Suite
-An AI-related project that forms part of my CAPACITI development portfolio.
+## 4. Sprint Backlog
 
-[View Repository](https://github.com/Jada-Rinquest/moodmuse-sparkle-suite)
+The Sprint Backlog was used to divide the project into smaller, more manageable stages. Each sprint focused on a specific goal and contained the tasks required to achieve that goal.
 
-### 3. Study Buddy AI
-An AI study-support project.
+### Sprint 1 – Induction and Core Skills
+**Sprint Goal:** Complete Linktank induction and master password reset procedures.
+| Task | Priority | Status |
+| :--- | :--- | :--- |
+| Complete induction and training | High | Completed |
+| Learn how to assist clients via calls and emails | High | Completed |
+| Master password resets and changes | High | Completed |
 
-[View Repository](https://github.com/Jada-Rinquest/Study-BuddyAI)
+### Sprint 2 – Advanced Client Assistance
+**Sprint Goal:** Assist clients with advisor mappings, FNA recommendations, and terminations.
+| Task | Priority | Status |
+| :--- | :--- | :--- |
+| Learn advisor mappings process | High | Completed |
+| Understand FNA recommendations | High | Completed |
+| Set up remote sessions with clients | Medium | Completed |
+| Process client terminations | Medium | Completed |
 
-### 4. Sparkle Studio AI
-An AI application project developed during my placement.
+### Sprint 3 – Platform Familiarisation and Independence
+**Sprint Goal:** Familiarize with AdviceTech, Xplan, and gain independent client access.
+| Task | Priority | Status |
+| :--- | :--- | :--- |
+| Get introduced to AdviceTech platform | High | Completed |
+| Learn to escalate queries to AdviceTech support | High | Completed |
+| Test AdviceTech site for troubleshooting | Medium | Completed |
+| Understand BA and Xplan system integration | Medium | In Progress |
+| Gain independent access to client profiles | High | Completed |
+| Master multitasking across platforms | Medium | In Progress |
 
-[View Repository](https://github.com/Jada-Rinquest/sparkle-studio-ai)
+### Evidence
+The following evidence demonstrates how the Sprint Backlog was used to organise and track project development:
+*   **Figure 7:** Sprint Backlog showing tasks organised according to sprint goals.
+*   **Figure 8:** Sprint tracking document showing task progress.
 
-### 5. AI Chatbot
-A further AI chatbot project demonstrating my exposure to conversational AI application development.
+### Reflection
+Using a Sprint Backlog helped me divide the project into smaller, more manageable stages. Instead of trying to learn everything about the software at once, I could focus on one sprint goal at a time. For example, during my *Individual-Chat-Bot* project at Capaciti, I underestimated how long tasks would take, which led to a rushed delivery. At Linktank, breaking the work into sprints has allowed me to master password resets before moving on to complex tasks like advisor mappings and Xplan integration. This experience has taught me the value of working incrementally and monitoring my progress against achievable goals.
 
-[View Repository](https://github.com/Jada-Rinquest/AI_Chatbot)
+---
 
-## Agile Assessment Portfolio
+## 5. Agile Logbook
 
-This section presents my Agile artefacts, evidence and reflections from my learning and industry placement journey.
+The Agile Logbook was used to document my daily activities, progress, challenges, and learning throughout my industry placement at Linktank.
 
-1. **Agile Team Charter** – Team purpose, responsibilities, values and working agreements.
-2. **User Stories and Tasks** – User needs, acceptance criteria and development tasks.
-3. **Product Backlog** – A prioritised list of features and requirements.
-4. **Sprint Backlog** – Selected work items and tasks planned for a sprint.
-5. **Agile Logbook** – Activities, challenges, progress and reflections across my placement.
+### Daily Stand-up Notes (Sample Week)
 
-## Skills Developed
+**Monday (Week 9):**
+*   **Yesterday:** Finished assisting clients with terminations and FNA recommendations.
+*   **Today:** Getting introduced to the AdviceTech platform and IFA site.
+*   **Blockers:** None.
 
-- AI application development exposure
-- Quality assurance and software testing
-- Problem-solving and troubleshooting
-- Understanding user requirements
-- Teamwork and collaboration
-- Technical communication and documentation
-- Customer-focused technical support
-- Continuous learning and professional development
+**Tuesday (Week 10):**
+*   **Yesterday:** Familiarized with AdviceTech and learned how to escalate queries.
+*   **Today:** Testing AdviceTech to better my troubleshooting skills for clients.
+*   **Blockers:** Need to understand how the BA works with the Xplan system.
 
-## Reflection
+**Wednesday (Week 11):**
+*   **Yesterday:** Got access to clients to refresh their profiles.
+*   **Today:** Working on more queries independently and multitasking.
+*   **Blockers:** Time management—juggling multiple platforms at once.
 
-My journey from CAPACITI to Linktank has helped me understand how technical knowledge can be applied in different professional settings. Working on AI projects introduced me to software functionality, testing and user requirements, while my technical support role allows me to focus on investigating issues and helping users.
+### Sprint Retrospective Notes
 
-I aim to continue improving my technical skills, building confidence in troubleshooting, and developing as an IT professional.
+**What went well:**
+*   The team (led by Abigail Rukuni) was very supportive during my induction.
+*   I successfully learned how to navigate clients through step-by-step processes over the phone.
+*   I gained independent access to client profiles and can now refresh them myself.
 
-## Contact
+**What didn't go well:**
+*   Multitasking between AdviceTech, Xplan, and the IFA site initially felt overwhelming.
+*   Some complex queries took longer to resolve while I was still learning the BA and Xplan integration.
 
-**GitHub:** [Jada-Rinquest](https://github.com/Jada-Rinquest)
+**Action Items:**
+*   Continue testing AdviceTech to improve troubleshooting speed.
+*   Take notes on the Xplan integration to reduce dependency on escalations.
+*   Practice time management techniques to juggle multiple platforms efficiently.
 
-Thank you for visiting my portfolio.
+### Evidence
+The following evidence demonstrates my use of the Agile Logbook:
+*   **Figure 9:** Agile Logbook showing daily stand-up notes and sprint retrospective notes.
+*   **Figure 10:** Monthly Attendance Register showing my daily hours at Linktank.
+
+### Reflection
+Maintaining an Agile Logbook throughout my placement has helped me track my activities and reflect on my learning and development. At the beginning of my placement at Linktank, much of my work focused on understanding the problem, completing induction, and learning password resets. As the project progressed, I moved into more complex tasks like advisor mappings, FNA recommendations, and eventually independent client profile management. The logbook helped me identify patterns, such as my initial struggle with multitasking. By recording these challenges in the logbook and raising them in retrospectives, I was able to implement action items that improved my workflow. Overall, the Agile Logbook has been an invaluable tool for monitoring my progress, identifying areas for improvement, and developing my skills in Agile project management.
+
+---
