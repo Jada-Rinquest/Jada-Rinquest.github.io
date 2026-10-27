@@ -384,6 +384,7 @@ h1 {
 }
 .rf1 { background: #ece7ff; }
 .rf2 { background: #dff8ef; }
+.rf3 { background: #ffd7e1; }
 
 /* Contact interface */
 .contact-layout {
@@ -424,6 +425,37 @@ h1 {
     background: #edd0e0;
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(212, 176, 208, 0.25);
+}
+
+/* ===== TABLE STYLES FOR AGILE BACKLOGS ===== */
+.table-container {
+    overflow-x: auto;
+    margin: 15px 0 25px 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+th, td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    font-size: 0.95rem;
+}
+th {
+    background: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    color: #46344e;
+}
+tr:last-child td {
+    border-bottom: none;
+}
+tr:hover td {
+    background: rgba(255, 255, 255, 0.6);
 }
 
 /* Animations */
@@ -484,7 +516,7 @@ h1 {
             <div>
                 <div class="meta-badge mb-3" style="width: max-content; padding: 6px 14px;">👋 HELLO, I'M</div>
                 <h1>Jada Rinquest</h1>
-                <p class="subtitle">Aspiring Software Developer<br>· IT Student</p>
+                <p class="subtitle">IT Student · Technical Support<br>· Agile Enthusiast</p>
                 
                 <div class="meta-badges">
                     <div class="meta-badge mb-1">🎂 22 years</div>
@@ -514,7 +546,7 @@ h1 {
         
         <!-- ABOUT PROFILE -->
         <section class="content-card about-box reveal-element">
-            I am an adaptable and motivated individual with strong communication and interpersonal skills. I work well both independently and as part of a team, and I enjoy collaborating with others to achieve shared goals. I am eager to learn, quick to adapt to new environments, and committed to delivering quality work while continuously developing skills.
+            I am a final-year student at the Cape Peninsula University of Technology, pursuing a Diploma in Information and Communication Technology. I am currently completing my Work Integrated Learning (WIL) industry placement at <strong>Linktank</strong>, where I work in Technical Support. I am passionate about using technology to solve real-world problems, and I am applying the Agile principles and AI skills I learned at Capaciti to improve support processes, assist clients with financial planning software, and ensure high customer satisfaction.
         </section>
 
         <!-- CAPABILITIES & KNOWLEDGE -->
@@ -525,13 +557,12 @@ h1 {
                 <div>
                     <h3 style="font-size:1.1rem; margin-bottom:12px; color:#5f4a6b;">Technical Stack</h3>
                     <div class="tag-container">
-                        <span class="t1">Java</span>
-                        <span class="t2">JavaScript</span>
-                        <span class="t3">MySQL</span>
-                        <span class="t4">Microsoft Office</span>
-                        <span class="t5">NetBeans</span>
-                        <span class="t1">IntelliJ</span>
-                        <span class="t2">AI Tools</span>
+                        <span class="t1">Technical Support</span>
+                        <span class="t2">AI Foundations</span>
+                        <span class="t3">Data Analysis</span>
+                        <span class="t4">Password Resets</span>
+                        <span class="t5">Java, SQL, HTML, CSS</span>
+                        <span class="t1">GitHub & Markdown</span>
                     </div>
                 </div>
                 <div>
@@ -540,8 +571,8 @@ h1 {
                         <span class="t4">Problem Solving</span>
                         <span class="t5">Teamwork</span>
                         <span class="t3">Communication</span>
-                        <span class="t1">Customer Service</span>
-                        <span class="t2">Time Management</span>
+                        <span class="t1">Multitasking</span>
+                        <span class="t2">Agile Project Management</span>
                     </div>
                 </div>
             </div>
@@ -567,6 +598,31 @@ h1 {
             <!-- TAB: EXPERIENCE -->
             <div id="experience" class="tab-content active">
                 <div class="interactive-timeline">
+                    
+                    <div class="timeline-card" style="background: rgba(212, 176, 208, 0.2); border-color: #d4b0d0;">
+                        <span class="date-badge">Aug 2026 – Present</span>
+                        <h3>Technical Support (WIL Placement) — Linktank</h3>
+                        <p style="color:#5f4a6b; font-size:0.9rem;">Cape Town</p>
+                        <ul>
+                            <li>Provide first-line technical support to clients via phone calls and emails.</li>
+                            <li>Assist clients with password resets, terminations, and refreshing client profiles.</li>
+                            <li>Guide clients through advisor mappings and FNA recommendations.</li>
+                            <li>Navigate and troubleshoot the AdviceTech platform, Xplan system, and IFA site.</li>
+                            <li>Escalate complex queries to AdviceTech support.</li>
+                            <li>Participate in daily Agile stand-up meetings.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-card" style="background: rgba(184, 217, 208, 0.2); border-color: #b8d9d0;">
+                        <span class="date-badge">Jul 2026 – Aug 2026</span>
+                        <h3>AI & Software Development Training — Capaciti (UVU Africa)</h3>
+                        <p style="color:#5f4a6b; font-size:0.9rem;">Cape Town</p>
+                        <ul>
+                            <li>Completed intensive training in AI Foundations, Chatbot Development, Content Generation, and Sentiment Analysis.</li>
+                            <li>Developed multiple AI-driven applications and managed source code using GitHub.</li>
+                        </ul>
+                    </div>
+
                     <div class="timeline-card">
                         <span class="date-badge">Nov 2025 – Jan 2026</span>
                         <h3>Sales Assistant — Sterns</h3>
@@ -575,7 +631,6 @@ h1 {
                             <li>Customer assistance with jewellery selection</li>
                             <li>POS systems &amp; transactions</li>
                             <li>Merchandising &amp; store standards</li>
-                            <li>Team collaboration</li>
                         </ul>
                     </div>
                     <div class="timeline-card">
@@ -605,12 +660,12 @@ h1 {
                 <div class="interactive-timeline">
                     <div class="timeline-card" style="background:#ffe5ee;">
                         <span class="date-badge">2024 – Present</span>
-                        <h3>Diploma in IT</h3>
+                        <h3>Diploma in Information and Communication Technology</h3>
                         <p>Cape Peninsula University of Technology</p>
                     </div>
                     <div class="timeline-card" style="background:#dcecff;">
                         <span class="date-badge">2021</span>
-                        <h3>National Senior Certificate</h3>
+                        <h3>National Senior Certificate (Grade 12)</h3>
                         <p>Bellville Technical High School</p>
                     </div>
                 </div>
@@ -620,10 +675,14 @@ h1 {
             <div id="references" class="tab-content">
                 <div class="ref-grid">
                     <div class="ref-card rf1">
+                        <strong>Abigail Rukuni</strong>
+                        <p style="font-size:0.9rem; margin-top:5px; color:#5f4a6b;">Linktank Manager/Mentor<br>abigailrukuni@linktank.co.za</p>
+                    </div>
+                    <div class="ref-card rf2">
                         <strong>Quentin Strydom</strong>
                         <p style="font-size:0.9rem; margin-top:5px; color:#5f4a6b;">Classic Cats<br>📞 068 254 2254</p>
                     </div>
-                    <div class="ref-card rf2">
+                    <div class="ref-card rf3">
                         <strong>Warren Meyer</strong>
                         <p style="font-size:0.9rem; margin-top:5px; color:#5f4a6b;">Sterns Manager<br>📞 073 841 7640</p>
                     </div>
@@ -690,6 +749,215 @@ h1 {
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- NEW SECTION: AGILE PORTFOLIO OF EVIDENCE -->
+        <section class="content-card reveal-element" style="border: 2px solid #d4b0d0;">
+            <h2 class="section-title">Project Presentation 3 – Agile Portfolio of Evidence</h2>
+            <p style="margin-bottom: 25px; line-height: 1.6; font-weight: 500;">Linktank Technical Support Project</p>
+            <p style="margin-bottom: 25px; line-height: 1.6;">This section presents my Agile Portfolio of Evidence for Project Presentation 3. It demonstrates the planning, implementation, and reflection completed during my current industry placement at Linktank.</p>
+
+            <!-- 1. Agile Team Charter -->
+            <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; margin: 30px 0 15px 0; color:#5f4a6b;">1. Agile Team Charter</h3>
+            <div class="ref-card rf2" style="margin-bottom: 15px;">
+                <h4 style="margin-bottom: 10px;">Project Purpose</h4>
+                <p style="font-size: 0.95rem; line-height: 1.5;">The purpose of this project is to improve the efficiency and quality of the Technical Support department at Linktank. By defining clear working agreements, values, and boundaries, the team aims to reduce ticket resolution times, improve customer satisfaction, and ensure a consistent support experience for clients using financial planning platforms like AdviceTech and Xplan.</p>
+                
+                <h4 style="margin-top: 15px; margin-bottom: 10px;">Core Values</h4>
+                <ul style="padding-left: 20px; font-size: 0.95rem; line-height: 1.5;">
+                    <li><strong>Communication:</strong> Maintain clear and patient communication with clients and advisors.</li>
+                    <li><strong>Accountability:</strong> Take ownership of queries and follow through to resolution.</li>
+                    <li><strong>Collaboration:</strong> Work together with the team (led by Mentor Abigail Rukuni) to solve complex software issues.</li>
+                    <li><strong>Security:</strong> Strictly verify information and follow security procedures during password resets.</li>
+                </ul>
+
+                <h4 style="margin-top: 15px; margin-bottom: 10px;">Working Agreements</h4>
+                <ul style="padding-left: 20px; font-size: 0.95rem; line-height: 1.5;">
+                    <li>Daily stand-up meetings at 9:00 AM with the team.</li>
+                    <li>All client interactions must be logged in the system.</li>
+                    <li>Verify client details before performing any password resets or terminations.</li>
+                    <li>Complex escalations must be routed to AdviceTech support promptly.</li>
+                    <li>Blockers must be raised immediately during stand-up.</li>
+                </ul>
+
+                <h4 style="margin-top: 15px; margin-bottom: 10px;">Evidence & Reflection</h4>
+                <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 10px;"><em>Evidence: Figure 1 – Agile Team Charter document; Figure 2 – Linktank induction and training notes.</em></p>
+                <p style="font-size: 0.95rem; line-height: 1.5;"><strong>Reflection:</strong> Creating the Agile Team Charter for the Linktank Technical Support team helped me understand the importance of establishing clear expectations in a professional environment. During my Capaciti training (Weeks 1-4), we worked on AI projects like the AI_Chatbot without a formal charter, which sometimes led to overlapping tasks. At Linktank, the charter provides a clear framework for how we work. It ensures that every team member understands the standards they must meet, especially regarding security and password resets. This experience has shown me that a strong team charter is a tool that improves communication, accountability, and overall team performance in a high-pressure support environment.</p>
+            </div>
+
+            <!-- 2. User Stories and Tasks -->
+            <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; margin: 30px 0 15px 0; color:#5f4a6b;">2. User Stories and Tasks</h3>
+            <div class="ref-card rf1" style="margin-bottom: 15px;">
+                <p style="font-size: 0.95rem; margin-bottom: 15px;">User stories were created to describe the Linktank support requirements from the perspective of the end user (the client/advisor) and the support agent.</p>
+                
+                <h4 style="margin-bottom: 5px;">User Story 1 – Password Resets (Priority: High)</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 5px;"><strong>As a</strong> Linktank client, <strong>I want</strong> to be able to reset my password quickly and securely <strong>so that</strong> I can regain access to my account.</p>
+                <ul style="padding-left: 20px; font-size: 0.9rem; margin-bottom: 15px;">
+                    <li>Verify client identity over the phone or email.</li>
+                    <li>Follow security procedures to reset the password.</li>
+                    <li>Confirm with the client that they can log in successfully.</li>
+                    <li>Log the interaction in the system.</li>
+                </ul>
+
+                <h4 style="margin-bottom: 5px;">User Story 2 – Advisor Mappings and FNA Recommendations (Priority: High)</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 5px;"><strong>As an</strong> Advisor, <strong>I want</strong> to ensure my client mappings and FNA recommendations are correct <strong>so that</strong> I can provide accurate financial advice.</p>
+                <ul style="padding-left: 20px; font-size: 0.9rem; margin-bottom: 15px;">
+                    <li>Navigate the AdviceTech platform and Xplan system.</li>
+                    <li>Test the mapping process to identify errors.</li>
+                    <li>Guide the advisor through the step-by-step process over the phone.</li>
+                    <li>Set up a remote session if necessary.</li>
+                </ul>
+
+                <h4 style="margin-bottom: 5px;">User Story 3 – Independent Client Access (Priority: Medium)</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 5px;"><strong>As a</strong> Support Agent, <strong>I want</strong> independent access to client profiles <strong>so that</strong> I can refresh them and resolve queries faster.</p>
+                <ul style="padding-left: 20px; font-size: 0.9rem; margin-bottom: 15px;">
+                    <li>Get administrative access to the client database.</li>
+                    <li>Test the profile refresh function.</li>
+                    <li>Troubleshoot errors independently.</li>
+                    <li>Escalate unresolved issues to AdviceTech support.</li>
+                </ul>
+
+                <h4 style="margin-top: 15px; margin-bottom: 10px;">Evidence & Reflection</h4>
+                <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 10px;"><em>Evidence: Figure 3 – Documentation of user stories and tasks; Figure 4 – Screenshot of troubleshooting steps.</em></p>
+                <p style="font-size: 0.95rem; line-height: 1.5;"><strong>Reflection:</strong> Creating user stories helped me understand how to describe system requirements from the user's perspective rather than only focusing on technical details. In my Capaciti projects, like the Study-BuddyAI, I often approached development with a feature-first mindset. At Linktank, breaking each user story into smaller tasks made the work much easier to manage. For example, the simple task of resetting a password required verification, security checks, and client confirmation. This process improved my understanding of how a seemingly simple feature can involve multiple components. Overall, user stories helped me keep each improvement focused on the user's needs, while the individual tasks provided a clear plan for implementation.</p>
+            </div>
+
+            <!-- 3. Product Backlog -->
+            <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; margin: 30px 0 15px 0; color:#5f4a6b;">3. Product Backlog</h3>
+            <div class="ref-card rf3" style="margin-bottom: 15px;">
+                <p style="font-size: 0.95rem; margin-bottom: 15px;">The Product Backlog contains the features, improvements, and technical tasks required for the Linktank Technical Support Optimisation project.</p>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Product Backlog Item</th>
+                                <th>Priority</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>PB01</td><td>Complete Linktank induction and training</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>PB02</td><td>Master password reset procedures via calls and emails</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>PB03</td><td>Learn advisor mappings and FNA recommendations</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>PB04</td><td>Familiarize with AdviceTech platform and IFA site</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>PB05</td><td>Test AdviceTech site to improve troubleshooting skills</td><td>Medium</td><td>Completed</td></tr>
+                            <tr><td>PB06</td><td>Understand BA and Xplan system integration</td><td>Medium</td><td>In Progress</td></tr>
+                            <tr><td>PB07</td><td>Gain independent access to client profiles</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>PB08</td><td>Master multitasking between multiple platforms</td><td>Medium</td><td>In Progress</td></tr>
+                            <tr><td>PB09</td><td>Escalate complex queries to AdviceTech support</td><td>High</td><td>Ongoing</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 style="margin-top: 15px; margin-bottom: 10px;">Evidence & Reflection</h4>
+                <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 10px;"><em>Evidence: Figure 5 – Linktank Product Backlog; Figure 6 – Monthly WIL reports detailing the work completed.</em></p>
+                <p style="font-size: 0.95rem; line-height: 1.5;"><strong>Reflection:</strong> Creating and maintaining the Product Backlog helped me understand how to prioritise work effectively. The backlog allowed me to identify which skills and tasks were most important to the support team and the clients. I focused first on mastering password resets and advisor mappings because these had the highest impact on client satisfaction. One of the most important lessons I learned was that a Product Backlog is not static; it changes as new issues arise. For example, when I was introduced to the AdviceTech platform in Week 9, I had to reprioritize my learning goals to include troubleshooting that specific site. Overall, the Product Backlog gave the project structure and helped me manage my development in smaller, prioritised pieces.</p>
+            </div>
+
+            <!-- 4. Sprint Backlog -->
+            <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; margin: 30px 0 15px 0; color:#5f4a6b;">4. Sprint Backlog</h3>
+            <div class="ref-card rf1" style="margin-bottom: 15px;">
+                <p style="font-size: 0.95rem; margin-bottom: 15px;">The Sprint Backlog was used to divide the project into smaller, more manageable stages. Each sprint focused on a specific goal.</p>
+                
+                <h4 style="margin-bottom: 5px;">Sprint 1 – Induction and Core Skills</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 10px;"><strong>Sprint Goal:</strong> Complete Linktank induction and master password reset procedures.</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr><th>Task</th><th>Priority</th><th>Status</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Complete induction and training</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>Learn how to assist clients via calls and emails</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>Master password resets and changes</td><td>High</td><td>Completed</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 style="margin-top: 20px; margin-bottom: 5px;">Sprint 2 – Advanced Client Assistance</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 10px;"><strong>Sprint Goal:</strong> Assist clients with advisor mappings, FNA recommendations, and terminations.</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr><th>Task</th><th>Priority</th><th>Status</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Learn advisor mappings process</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>Understand FNA recommendations</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>Set up remote sessions with clients</td><td>Medium</td><td>Completed</td></tr>
+                            <tr><td>Process client terminations</td><td>Medium</td><td>Completed</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 style="margin-top: 20px; margin-bottom: 5px;">Sprint 3 – Platform Familiarisation and Independence</h4>
+                <p style="font-size: 0.9rem; margin-bottom: 10px;"><strong>Sprint Goal:</strong> Familiarize with AdviceTech, Xplan, and gain independent client access.</p>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr><th>Task</th><th>Priority</th><th>Status</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Get introduced to AdviceTech platform</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>Learn to escalate queries to AdviceTech support</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>Test AdviceTech site for troubleshooting</td><td>Medium</td><td>Completed</td></tr>
+                            <tr><td>Understand BA and Xplan system integration</td><td>Medium</td><td>In Progress</td></tr>
+                            <tr><td>Gain independent access to client profiles</td><td>High</td><td>Completed</td></tr>
+                            <tr><td>Master multitasking across platforms</td><td>Medium</td><td>In Progress</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 style="margin-top: 15px; margin-bottom: 10px;">Evidence & Reflection</h4>
+                <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 10px;"><em>Evidence: Figure 7 – Sprint Backlog; Figure 8 – Sprint tracking document showing task progress.</em></p>
+                <p style="font-size: 0.95rem; line-height: 1.5;"><strong>Reflection:</strong> Using a Sprint Backlog helped me divide the project into smaller, more manageable stages. Instead of trying to learn everything about the software at once, I could focus on one sprint goal at a time. For example, during my Individual-Chat-Bot project at Capaciti, I underestimated how long tasks would take, which led to a rushed delivery. At Linktank, breaking the work into sprints has allowed me to master password resets before moving on to complex tasks like advisor mappings and Xplan integration. This experience has taught me the value of working incrementally and monitoring my progress against achievable goals.</p>
+            </div>
+
+            <!-- 5. Agile Logbook -->
+            <h3 style="font-family:'Playfair Display',serif; font-size:1.6rem; margin: 30px 0 15px 0; color:#5f4a6b;">5. Agile Logbook</h3>
+            <div class="ref-card rf2" style="margin-bottom: 15px;">
+                <p style="font-size: 0.95rem; margin-bottom: 15px;">The Agile Logbook was used to document my daily activities, progress, challenges, and learning throughout my industry placement at Linktank.</p>
+                
+                <h4 style="margin-bottom: 10px;">Daily Stand-up Notes (Sample Week)</h4>
+                <div class="timeline-card" style="margin-bottom: 10px; background: rgba(255,255,255,0.7);">
+                    <strong>Monday (Week 9)</strong><br>
+                    <span style="font-size:0.9rem;"><strong>Yesterday:</strong> Finished assisting clients with terminations and FNA recommendations.<br>
+                    <strong>Today:</strong> Getting introduced to the AdviceTech platform and IFA site.<br>
+                    <strong>Blockers:</strong> None.</span>
+                </div>
+                <div class="timeline-card" style="margin-bottom: 10px; background: rgba(255,255,255,0.7);">
+                    <strong>Tuesday (Week 10)</strong><br>
+                    <span style="font-size:0.9rem;"><strong>Yesterday:</strong> Familiarized with AdviceTech and learned how to escalate queries.<br>
+                    <strong>Today:</strong> Testing AdviceTech to better my troubleshooting skills for clients.<br>
+                    <strong>Blockers:</strong> Need to understand how the BA works with the Xplan system.</span>
+                </div>
+                <div class="timeline-card" style="margin-bottom: 20px; background: rgba(255,255,255,0.7);">
+                    <strong>Wednesday (Week 11)</strong><br>
+                    <span style="font-size:0.9rem;"><strong>Yesterday:</strong> Got access to clients to refresh their profiles.<br>
+                    <strong>Today:</strong> Working on more queries independently and multitasking.<br>
+                    <strong>Blockers:</strong> Time management—juggling multiple platforms at once.</span>
+                </div>
+
+                <h4 style="margin-bottom: 10px;">Sprint Retrospective Notes</h4>
+                <p style="font-size: 0.95rem; margin-bottom: 5px;"><strong>What went well:</strong> The team (led by Abigail Rukuni) was very supportive during my induction. I successfully learned how to navigate clients through step-by-step processes. I gained independent access to client profiles and can now refresh them myself.</p>
+                <p style="font-size: 0.95rem; margin-bottom: 5px;"><strong>What didn't go well:</strong> Multitasking between AdviceTech, Xplan, and the IFA site initially felt overwhelming. Some complex queries took longer to resolve while I was still learning the BA and Xplan integration.</p>
+                <p style="font-size: 0.95rem; margin-bottom: 15px;"><strong>Action Items:</strong> Continue testing AdviceTech to improve troubleshooting speed. Take notes on the Xplan integration to reduce dependency on escalations. Practice time management techniques to juggle multiple platforms efficiently.</p>
+
+                <h4 style="margin-top: 15px; margin-bottom: 10px;">Evidence & Reflection</h4>
+                <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 10px;"><em>Evidence: Figure 9 – Agile Logbook showing daily stand-up notes; Figure 10 – Monthly Attendance Register showing my daily hours at Linktank.</em></p>
+                <p style="font-size: 0.95rem; line-height: 1.5;"><strong>Reflection:</strong> Maintaining an Agile Logbook throughout my placement has helped me track my activities and reflect on my learning and development. At the beginning of my placement at Linktank, much of my work focused on understanding the problem, completing induction, and learning password resets. As the project progressed, I moved into more complex tasks like advisor mappings, FNA recommendations, and eventually independent client profile management. The logbook helped me identify patterns, such as my initial struggle with multitasking. By recording these challenges in the logbook and raising them in retrospectives, I was able to implement action items that improved my workflow. Overall, the Agile Logbook has been an invaluable tool for monitoring my progress, identifying areas for improvement, and developing my skills in Agile project management.</p>
+            </div>
+        </section>
+
+        <!-- VIDEO SECTION (From README) -->
+        <section class="content-card reveal-element">
+            <h2 class="section-title">Interview Presentation</h2>
+            <video width="100%" controls style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <source src="video/interview.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </section>
 
         <!-- CONNECT BOX -->
